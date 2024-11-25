@@ -20,7 +20,7 @@ web design
 
 ## Basic Project Structure  
 
-📂 project-root
+📂 project-root  
 ├── 📄 index.html            - Main entry HTML file  
 ├── 📄 navbar.html            
 ├── 📄 footer.html           
