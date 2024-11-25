@@ -13,9 +13,32 @@ web design
 
 
 ## Table of Contents
-- [Starting a Local Server](#starting-a-local-server)
-- [Reusing navbar.html and footer.html](#reusing-navbarhtml-and-footerhtml)
-- [Replacing the Web Name and Links](#replacing-the-web-name-and-links)
+- [Starting a Local Server](#starting-a-local-server)  
+- [Reusing navbar.html and footer.html](#reusing-navbarhtml-and-footerhtml)  
+- [Replacing the Web Name and Links](#replacing-the-web-name-and-links)  
+- [Basic Project Structure](#basic-project-structure)  
+
+## Basic Project Structure
+project-root/
+├── index.html
+├── navbar.html
+├── footer.html
+├── example.html
+├── your html.html 
+├── css/
+│   ├── styles.css        # global style (only for navbar, footer, etc.)
+│   ├── index.css
+│   ├── example.css
+│   └── your css.css
+├── js/ 
+│   ├── main.js           # global js (only for navbar, footer, etc.)
+│   ├── index.js
+│   ├── example.js
+│   └── your js.js
+├── src/               		# Static resources(pic, logo, etc.)
+│
+└── README.md             # introduction to the project
+
 
 ## Starting a Local Server
 - enter the folder where your project is located
@@ -28,12 +51,12 @@ web design
 ## Reusing `navbar.html`, `footer.html`
 - import Google Font
 - import Google Icon 
-- import custom css `css/template.css`
+- import custom css `css/styles.css`
 - import `bootstrap` 
 - import `Jquery`
 	- import `<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>` in the `<head> </head>`
-	- make sure there is `js/templateScript.js` in your project
-	- import `<script src="js/templateScript.js"></script>`
+	- make sure there is `js/main.js` in your project
+	- import `<script src="js/main.js"></script>`
 	,and add this line before the closing body tag
 - include a placeholder div in your html where you want
     - Navbar placeholder:
@@ -48,7 +71,7 @@ web design
 
 ## Replacing the Web Name and Links
 - enter `js` folder
-- open `templateScript.js` file
+- open `main.js` file
 - replace the default address or name with yours in the lists
 	- navMenuItems
 	```js

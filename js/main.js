@@ -26,12 +26,10 @@ $(document).ready(function () {
 
 // extract code for reuse navbar n footer
  $("#navbar-placeholder").load("navbar.html", function () {
-  console.log("Navbar loaded");
   setNavActiveLink();
 });
 
  $("#footer-placeholder").load("footer.html", function () {
-  console.log("Footer loaded");
   setFooterActiveLink();
 });
 

@@ -6,6 +6,11 @@
 #FF9100 ORANGE
 */
 
+/*
+The global css style file
+only put the global styles
+*/
+
 body {
     font-family: Arial, sans-serif;
     background-color: #FFFBE6;
