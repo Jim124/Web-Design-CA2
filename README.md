@@ -35,6 +35,7 @@ web design
 	- import `<script src="js/templateScript.js"></script>`
 	,and add this line before the closing body tag
 - include a placeholder div in your html where you want
+      ```html
       <div id="navbar-placeholder"></div>
       ```
     - Footer placeholder:
