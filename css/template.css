@@ -1,0 +1,176 @@
+
+/*
+#00712D DARK GREEN
+#D5ED9F LIGHT GREEN
+#FFFBE6 BEIGE
+#FF9100 ORANGE
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFBE6;
+    padding-top: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: #00712D;
+}
+
+
+.roboto-font {
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 200px;
+  color: #00712D;
+  text-align: center;
+  background-color: #D5ED9F;
+  padding: 20px;
+}
+
+/*navbar*/
+.wrapper {
+  zindex: 10;
+}
+
+nav {
+  background-color: #FFFBE6 !important;
+}
+
+.navbar {
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.offcanvas {
+  background-color: #FFFBE6;
+  height: 1000px;
+  min-height: 0;
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-fixed {
+  transform: translateY(0);
+  box-shadow: 0px 4px 6px rgba(255,145,0, 0.2);
+}
+
+.navbar-brand img {
+  with: 150px;
+  height: 150px;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  position: relative;
+  color: #FF9100;
+  font-size: 17px;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FF9100;
+  transform: translateY(-5px);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 50%;
+  height: 0;
+  background-color: #FF9100;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+  }
+
+
+.nav-link:hover::after {
+  transform: scaleY(1);
+  height: 2px;
+  width: 100%; 
+}
+
+.nav-link.active, .material-icons.active {
+  color: #00712D !important;
+  font-weight: bold;
+}
+.nav-link.active:hover {
+  color: #FF9100 !important;
+  font-weight: bold;
+}
+
+.nav-link:focus {
+  color: #FF9100; 
+}
+
+.nav-link .material-icons {
+  width: 17px;
+  height: 17px;
+  color: #FF9100;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/*navbar-search*/
+.btn-search {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-search span {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*footer*/
+.footer-link {
+  color: #333333;
+  font-size: 17px;
+}
+
+.footer-link:hover {
+  color: #FF9100;
+}
+
+.nav .footer-item {
+  margin: 6px 0;
+}
+
+
+.footer-text {
+  text-align: left;
+}
+
+.signup {
+  min-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
+  padding: 50px 0;
+  border: 1px dashed green;
+  text-align: left;
+}
+
+.signup .content div{
+  padding: 8px 0;
+}
+
+.signup .title {
+  font-size: 20px;
+}
