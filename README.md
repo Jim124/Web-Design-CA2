@@ -26,7 +26,8 @@ web design
 	- usually, the address is `http://localhost:8000`
 
 ## Reusing `navbar.html`, `footer.html`
-- import Google font
+- import Google Font
+- import Google Icon 
 - import custom css `css/template.css`
 - import `bootstrap` 
 - import `Jquery`
