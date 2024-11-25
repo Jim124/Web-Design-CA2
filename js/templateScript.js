@@ -3,7 +3,7 @@ $(document).ready(function () {
   // navbar menu list
  const navMenuItems = [
   { name: "Home", href: "index.html" },
-  { name: "Stay", href: "stay.html"},
+  { name: "example", href: "example.html"},
   { name: "Food&Drinks", href: "#"},
   { name: "Outdoor", href: "#"},
   { name: "Festival&Events", href: "#"}
@@ -11,7 +11,7 @@ $(document).ready(function () {
   // footer menu list
  const footerMenuItems = [
   { name: "Home", href: "index.html" },
-  { name: "Where to stay", href: "stay.html"},
+  { name: "example", href: "example.html"},
   { name: "Food & Drinks", href: "#"},
   { name: "Outdoor", href: "#"},
   { name: "Festival & Events", href: "#"}
