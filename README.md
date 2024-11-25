@@ -41,7 +41,7 @@ web design
       ```html
       <div id="footer-placeholder"></div>
       ```
-	- `stay.html` is provided as an example of how to use `navbar.html` and `footer.html`. Refer to it if you need guidance on implementation.
+	- `example.html` is provided as an example of how to use `navbar.html` and `footer.html`. Refer to it if you need guidance on implementation.
 
 ## Replacing the Web Name and Links
 - enter `js` folder
