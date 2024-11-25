@@ -18,26 +18,26 @@ web design
 - [Replacing the Web Name and Links](#replacing-the-web-name-and-links)  
 - [Basic Project Structure](#basic-project-structure)  
 
-## Basic Project Structure
-project-root/
-├── index.html
-├── navbar.html
-├── footer.html
-├── example.html
-├── your html.html 
-├── css/
-│   ├── styles.css        # global style (only for navbar, footer, etc.)
-│   ├── index.css
-│   ├── example.css
-│   └── your css.css
-├── js/ 
-│   ├── main.js           # global js (only for navbar, footer, etc.)
-│   ├── index.js
-│   ├── example.js
-│   └── your js.js
-├── src/               		# Static resources(pic, logo, etc.)
-│
-└── README.md             # introduction to the project
+## Basic Project Structure  
+project-root/  
+├── index.html  
+├── navbar.html  
+├── footer.html  
+├── example.html  
+├── your html.html   
+├── css/  
+│   ├── styles.css        # global style (only for navbar, footer, etc.)  
+│   ├── index.css  
+│   ├── example.css  
+│   └── your css.css  
+├── js/   
+│   ├── main.js           # global js (only for navbar, footer, etc.)  
+│   ├── index.js  
+│   ├── example.js  
+│   └── your js.js  
+├── src/               		# Static resources(pic, logo, etc.)  
+│  
+└── README.md             # introduction to the project  
 
 
 ## Starting a Local Server
