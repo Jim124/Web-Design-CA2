@@ -13,13 +13,12 @@ web design
 
 
 ## Table of Contents
+- [Basic Project Structure](#basic-project-structure)  
 - [Starting a Local Server](#starting-a-local-server)  
 - [Reusing navbar.html and footer.html](#reusing-navbarhtml-and-footerhtml)  
 - [Replacing the Web Name and Links](#replacing-the-web-name-and-links)  
-- [Basic Project Structure](#basic-project-structure)  
 
 ## Basic Project Structure  
-
 📂 project-root  
 ├── 📄 index.html            - Main entry HTML file  
 ├── 📄 navbar.html            
