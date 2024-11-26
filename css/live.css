@@ -1,0 +1,9 @@
+.subtitle{
+  display:flex;
+  justify-content:between;
+  gap:1rem;
+  list-style-type:none;
+}
+.goBack:hover{
+  text-decoration: underline;
+}
