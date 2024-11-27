@@ -47,6 +47,10 @@ a {
   zindex: 10;
 }
 
+.container-fluid {
+  margin: 0 20px;
+}
+
 nav {
   background-color: #FFFBE6 !important;
 }
@@ -81,9 +85,19 @@ nav {
 
 .nav-link {
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
   color: #FF9100;
-  font-size: 17px;
+  font-size: 16px;
   transition: transform 0.3s ease;
+}
+
+.nav-link span {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .nav-link:hover {
