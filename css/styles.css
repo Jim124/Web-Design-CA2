@@ -89,7 +89,7 @@ nav {
   overflow: hidden;
   color: #FF9100;
   font-size: 16px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-link span {
@@ -102,36 +102,34 @@ nav {
 
 .nav-link:hover {
   color: #FF9100;
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
 .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
-  width: 50%;
-  height: 0;
+  bottom: 0;
+  width: 0; /* hidden */
+  height: 2px;
   background-color: #FF9100;
-  transform: scaleY(0);
   transform-origin: bottom;
-  transition: transform 0.3s ease;
-  }
+  transition: transform 0.3s ease-in-out;
+}
 
 
 .nav-link:hover::after {
-  transform: scaleY(1);
-  height: 2px;
   width: 100%; 
 }
 
-.nav-link.active, .material-icons.active {
+.nav-link.active {
   color: #00712D !important;
   font-weight: bold;
 }
-.nav-link.active:hover {
-  color: #FF9100 !important;
-  font-weight: bold;
+
+.nav-link.active::after {
+  content: "";
+  transform: scaleY(0);
 }
 
 .nav-link:focus {
