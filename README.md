@@ -20,23 +20,23 @@ web design
 
 ## Basic Project Structure  
 project-root
-├── index.html            - Main entry HTML file  
-├── navbar.html            
-├── footer.html           
-├── example.html           
-├── your html.html          
-├── css/                  - CSS folder  
-│   ├── styles.css        - Global styles (for navbar, footer, etc.)  
-│   ├── index.css         
-│   ├── example.css        
-│   └── your css.css        
-├── js/                   - JavaScript folder  
-│   ├── main.js           - Global JavaScript (for navbar, footer, etc.)  
-│   ├── index.js           
-│   ├── example.js          
-│   └── your js.js         
-├── src/                  - Static resources folder (images, logo, etc.)  
-└── README.md             - Project documentation and instructions  
+├── index.html            - Main entry HTML file
+├── navbar.html
+├── footer.html
+├── example.html
+├── your html.html
+├── css/                  - CSS folder
+│   ├── styles.css        - Global styles (for navbar, footer, etc.)
+│   ├── index.css
+│   ├── example.css
+│   └── your css.css
+├── js/                   - JavaScript folder
+│   ├── main.js           - Global JavaScript (for navbar, footer, etc.)
+│   ├── index.js
+│   ├── example.js
+│   └── your js.js
+├── src/                  - Static resources folder (images, logo, etc.)
+└── README.md             - Project documentation and instructions
 
 ## Starting a Local Server
 - enter the folder where your project is located
