@@ -19,25 +19,26 @@ web design
 - [Replacing the Web Name and Links](#replacing-the-web-name-and-links)  
 
 ## Basic Project Structure  
-project-root
-├── js
-│   ├── styles.js
-│   ├── index.js
-│   ├── example.js
-│   └── your_js_file.js
-├── css
-│   ├── styles.css
-│   ├── index.css
-│   ├── example.css
-│   └── your_css_file.css
-├── src - Static resources folder (images, logo, etc.)
-├── index.html
-├── navabar.html
-├── footer.html
-├── example.html
-├── your_html_file.html
-└── readme.md
-
+```
+project-root  
+├── js  
+│   ├── styles.js  
+│   ├── index.js  
+│   ├── example.js  
+│   └── your_js_file.js  
+├── css  
+│   ├── styles.css  
+│   ├── index.css  
+│   ├── example.css  
+│   └── your_css_file.css  
+├── src - Static resources folder (images, logo, etc.)  
+├── index.html  
+├── navabar.html  
+├── footer.html  
+├── example.html  
+├── your_html_file.html  
+└── readme.md  
+```
 
 ## Starting a Local Server
 - enter the folder where your project is located
