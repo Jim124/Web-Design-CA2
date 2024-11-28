@@ -3,16 +3,16 @@ $(document).ready(function () {
   const navMenuItems = [
     { name: 'Home', href: 'index.html' },
     { name: 'Where to stay', href: 'live.html' },
-    { name: 'Food&Drinks', href: '#' },
-    { name: 'Outdoor', href: '#' },
+    { name: 'Food&Drinks', href: 'food_drinks.html' },
+    { name: 'Outdoor', href: 'outdoor.html' },
     { name: 'Festival&Events', href: '#' },
   ];
   // footer menu list
   const footerMenuItems = [
     { name: 'Home', href: 'index.html' },
     { name: 'Where to stay', href: 'live.html' },
-    { name: 'Food & Drinks', href: '#' },
-    { name: 'Outdoor', href: '#' },
+    { name: 'Food & Drinks', href: 'food_drinks.html' },
+    { name: 'Outdoor', href: 'outdoor.html' },
     { name: 'Festival & Events', href: '#' },
   ];
   // footer legal list
