@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subtitle{
+  display:flex;
+  gap:1rem;
+  list-style-type:none;
+  margin-bottom:50px;
+  margin-top:50px;
+  padding-left:0;
+}
+.description{
+  margin-bottom:30px;
+}
+.detail{
+  margin:20px 0;
+}
+.content{
+  margin-bottom:30px;
+}
