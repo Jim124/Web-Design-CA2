@@ -13,7 +13,7 @@ $(document).ready(function () {
     { name: 'Where to stay', href: 'live.html' },
     { name: 'Food & Drinks', href: 'food_drinks.html' },
     { name: 'Outdoor', href: 'outdoor.html' },
-    { name: 'Festival & Events', href: '#' },
+    { name: 'Festival & Events', href: 'festival.html' },
   ];
   // footer legal list
   const footerLegalItems = [
