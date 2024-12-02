@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>next stop dublin</title>
+	
+	<!-- IMPORT Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+	<!-- Google Icon -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- Link to navbar n footer stylesheet -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/lu.css">
+	
+</head>
+<body>
+	<!-- navbar part -->
+	<div id="navbar-placeholder"></div>
+<!-- main content -->
+	<div class="sign-wrapper px-5 lato-regular">
+		<h2 class="roboto-font">
+			Sign up
+		</h2>
+		<!-- sign up form -->
+		<div class="container text-left">
+			<!-- Columns are always 50% wide, on mobile and desktop -->
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-12">
+					<form id = "sign-up-form" class="needs-validation mx-5" novalidate>
+						<!-- nickname row -->
+						<div class="row mb-4">
+							<label for="inputName" class="col-sm-2 col-form-label">
+								Name
+							</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputName" maxlength="20" placeholder="please enter your name" required>
+								<div id="nameHelpBlock" class="form-text">
+  									Please enter your name, more than 4 characters.
+								</div>		
+								<div class="invalid-feedback">
+								    The name must be longer than one character.
+								</div>						
+							</div>
+						</div>						
+						<!-- email row -->
+						<div class="row mb-4">
+							<label for="inputEmail" class="col-sm-2 col-form-label">
+								Email 
+							</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="inputEmail" maxlength="40" placeholder="please enter your email address" required>
+								<div id="emailHelpBlock" class="form-text">
+  									Please enter a valid email address.
+								</div>
+								<div class="invalid-feedback">
+									Please enter an email correctly.
+							    </div>
+							</div>
+						</div>						
+						<!-- password row -->
+						<div class="row mb-4">
+							<label for="inputPassword" class="col-sm-2 col-form-label">
+							Password
+						</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="inputPassword" maxlength="10" placeholder="please enter your password" required>
+								<div id="passwordHelpBlock" class="form-text">
+  									Your password must be 8 characters long, contain letters and numbers.
+								</div>
+								<div class="invalid-feedback">
+									Please enter password correctly.
+							    </div>
+							</div>
+						</div>
+						<!-- option row -->
+						<div class="row mb-4">
+							<label for="selectCity" class="col-sm-2 col-form-label">City</label>
+							<div class="col-sm-10">
+								<select class="form-select" aria-label="selectCity">
+									<option selected disabled>--choose a city you'd like to visit--</option>
+								</select>
+								<div id="cityHelpBlock" class="form-text">
+  									Please choose a city you'd like to visit.
+								</div>								
+							</div>
+						</div>						
+						<!-- radios row -->
+						<fieldset class="row mb-4">
+							<legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+							<div class="col-sm-10">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="female" value="female" checked>
+									<label class="form-check-label" for="gridRadios1">
+										Female
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="male" value="male">
+									<label class="form-check-label" for="gridRadios2">
+										Male
+									</label>
+								</div>
+								<div class="form-check disabled">
+									<input class="form-check-input" type="radio" name="gridRadios" id="secret" value="secret">
+									<label class="form-check-label" for="secret">
+										Screct
+									</label>
+								</div>
+							</div>
+						</fieldset>
+						<!-- button -->
+						<div class="d-grid gap-2 col-6 mx-auto">
+							<button  type="submit" class="text-center btn btn-light sub-btn">Sign Up</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-4 col-md-4 d-none d-md-block h-100">
+					<div class="gif-container w-100">
+						<img class= "sign-up-gif" src="src/logo.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer Section -->
+	<div id="footer-placeholder"></div>
+	<!-- js jquery -->
+	<script src="js/main.js"></script>
+	<script src="js/main.js?v=1.0"></script>
+	<script type="js/lu-index-signup.js"></script>
+	<script src="js/lu-index-signup.js?v=1.0"></script>
+	<!-- Link to Bootstrap JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
