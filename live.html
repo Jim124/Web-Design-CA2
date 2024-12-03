@@ -29,12 +29,12 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/live.js"></script>
     <title>Where to stay</title>
   </head>
   <body>
     <div id="navbar-placeholder"></div>
-    <div class="container">
+    <div id="" class="container">
       <ol class="subtitle">
         <li><a class="goBack" href="index.html">Home</a></li>
         <li>/</li>
@@ -42,10 +42,10 @@
       </ol>
       <h1 class="live-title">Where to stay</h1>
     </div>
-    <div class="container overflow-hidden text-center">
+    <div class="container overflow-hidden text-center item-list">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 category">
         <div class="col">
-          <a href="hotel.html">
+          <a href="#hotel-description" id="hotel">
             <div class="product">
               <div class="icons">
                 <i class="material-icons">hotel</i>
@@ -56,7 +56,7 @@
           </a>
         </div>
         <div class="col item">
-          <a href="cabin.html">
+          <a id="cabin" href="#hotel-description">
             <div class="product">
               <div class="icons">
                 <i class="material-icons">cabin</i>
@@ -147,6 +147,23 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="container" id="hotel-description" style="display: none">
+      <h1 class="description">Dream Getaway Awaits You Here</h1>
+      <img id="stay-img" src="src/images/hotel.jpg" width="100%" />
+      <h3 class="detail">Description</h3>
+      <p class="content">
+        Glamping Tuscan Style in an Aframe Cabin Tent, nestled in a beautiful
+        olive orchard. AC, heat, Queen Bed, TV, Wi-Fi and an amazing view. Close
+        to Weeki Wachee River State Park, mermaids, manatees, Chassahwitzka
+        River and on the SC Bike Path. Kayaks available for rivers. Bathhouse,
+        fire pit, Kitchenette, fresh eggs. Relax & enjoy fresh country air. No
+        pets please. Ducks, hens and roosters roam the grounds. We have a Pot
+        Cake Rescue from Bimini, Retriever and Pom dog. The space is inspiring
+        and relaxing. Enjoy the beauty of the orchard. Spring trees are in
+        blossom and harvested in Fall. We have a farm store where we sell our
+        farm to table products
+      </p>
     </div>
 
     <div id="footer-placeholder"></div>
