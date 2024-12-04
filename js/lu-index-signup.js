@@ -234,13 +234,15 @@ $(document).ready(function () {
     `);
   });
 
-    $("#sign-up-form").on("submit", function (event) {
-    // prevent default submit
+
+  // validate when submit all the information
+  $("#sign-up-form").on("submit", function (event) {
+  // prevent default submit
     event.preventDefault();
-    // if the form validation
+  // if the form validation
     let isValid = true;
 
-    // validate name
+  // validate name
     const nameInput = document.getElementById("inputName");
     if (nameInput.value.length < 4) {
       nameInput.classList.add("is-invalid");
@@ -249,7 +251,7 @@ $(document).ready(function () {
       nameInput.classList.remove("is-invalid");
     };
 
-    // validate email 
+  // validate email 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const emailInput = document.getElementById("inputEmail");
     if (!emailRegex.test(emailInput.value)) {
@@ -259,7 +261,7 @@ $(document).ready(function () {
       emailInput.classList.remove("is-invalid");
     };
 
-    // validate password 
+  // validate password 
     const pwdInput = document.getElementById("inputPassword");
     const pswRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
     if (!pswRegex.test(pwdInput.value)) {
@@ -269,7 +271,7 @@ $(document).ready(function () {
       pwdInput.classList.remove("is-invalid");
     };
 
-    // through all the viladation, submit all info
+  // through all the viladation, submit all info
     if (isValid) {
       alert("Form submitted successfully!");
       this.submit();
@@ -277,5 +279,27 @@ $(document).ready(function () {
     }
   });
 
+  // navigate to ohter pages
+  // get each button by id
+  const btnForStay = document.getElementById('stayBtn');
+  const btnForFnd = document.getElementById('fndBtn');
+  const btnForOutdoor = document.getElementById('outdoorBtn');
+  const btnForFne = document.getElementById('fneBtn');
 
+  // bind a click event
+  btnForStay.addEventListener('click', () => {
+    window.location.href = 'live.html';
+  });
+
+  btnForFnd.addEventListener('click', () => {
+    window.location.href = 'food_drinks.html';
+  });
+
+  btnForOutdoor.addEventListener('click', () => {
+    window.location.href = 'outdoor.html';
+  });
+
+  btnForFne.addEventListener('click', () => {
+    window.location.href = 'festival.html';
+  });
 })

@@ -48,7 +48,7 @@ project-root
 	- e.g., `Serving HTTP on :: port 8000 (http://[::]:8000/) ...`
 	- usually, the address is `http://localhost:8000`
 
-## Reusing `navbar.html`, `footer.html`
+## Reusing `navbar.html` & `footer.html`
 - import Google Font
 - import Google Icon 
 - import custom css `css/styles.css`

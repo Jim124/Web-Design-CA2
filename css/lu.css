@@ -177,7 +177,7 @@ label {
 }
 
 .form-text {
-    ont-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 11px;
@@ -208,7 +208,7 @@ label {
     animation-duration: 15s;
     animation-name: drive;
     animation-iteration-count: infinite;
-    animation-direction: cubic-bezier(0.42, 0, 0.58, 0.38);
+    animation-direction: normal;
     overflow: visible;
     z-index: 10;
 }
