@@ -35,7 +35,7 @@
   
 }
 .product:hover{
-  background-color:#D5ED9E;
+  background-color:#D5ED9F;
 }
 .icons{
   display:flex;
@@ -53,5 +53,17 @@
 }
 .item-list{
   margin-bottom:30px;
+}
+
+.description{
+  margin-bottom:30px;
+}
+.detail{
+  margin:20px 0;
+}
+.content{
+  margin-bottom:30px;
+  color:#8998A9;
+  font-weight:400;
 }
 

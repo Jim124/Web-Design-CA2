@@ -27,9 +27,13 @@ p{
   font-weight:400;
   /* color:#8998A9; */
 }
+/* #00712D */
+/* #D5ED9F */
+/* #FFFBE6 */
+/* #FF9100 */
 .total{
-  border:1px solid #E3E3F2;
-  background-color:#E3E3F2;
+  border:1px solid #D5ED9F;
+  background-color:#D5ED9F;
 }
 .winter{
   display:flex;
