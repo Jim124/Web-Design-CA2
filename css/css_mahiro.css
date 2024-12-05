@@ -361,13 +361,13 @@ consept
 
 /* 画像背景 */
 .concept-img {
-  background-image: url('src/assets/images/outdoor3.jpg');
+  background-image: url('../assets/images/outdoor1.jpg');
   background-position: center;
   background-size: cover;
   height: 340px;
   border-radius: 10px;
   position: relative;
-  z-index: 0; /* 他の要素と衝突しないように調整 */
+  z-index: 1; /* 他の要素と衝突しないように調整 */
 }
 
 #concept-two .concept-img {
@@ -419,3 +419,4 @@ consept
     text-align: center; /* テキストを中央寄せに */
   }
 }
+
