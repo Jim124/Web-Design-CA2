@@ -27,7 +27,7 @@ $(document).ready(function () {
     },
     {
       src: "src/images/hotel.jpg",
-      alt: "",
+      alt: "hotel",
       title: "Luxury Awaits: Your Winter Getaway in Dublin",
       text: "where to stay",
       category: "hotel",
@@ -63,33 +63,33 @@ $(document).ready(function () {
   // Dynamically generate second row - food n drinks
   const indoorPlaces = [
     {
-      src: "src/lu-pic/stay.jpg",
-      alt: "",
+      src: "src/lu-pic/indoor-1.jpg",
+      alt: "indoor",
       title:
-        "Plan a magical winter break in DublinPlan a magical winter break in Dublin",
-      text: "where to stay",
-      category: "castle",
+        "Ryleigh's",
+      text: "grill",
+      category: "restuarant",
     },
     {
-      src: "src/lu-pic/stay.jpg",
-      alt: "",
-      title: "Plan a magical winter break",
-      text: "where to stay",
-      category: "castle",
+      src: "src/lu-pic/indoor-2.jpg",
+      alt: "indoor",
+      title: "WILDE Restaurant",
+      text: "fusion",
+      category: "restuarant",
     },
     {
-      src: "src/lu-pic/stay.jpg",
-      alt: "",
-      title: "Plan a magical winter break in Dublin",
-      text: "where to stay",
-      category: "castle",
+      src: "src/lu-pic/indoor-3.jpg",
+      alt: "indoor",
+      title: "FIRE Steakhouse and Bar",
+      text: "steak",
+      category: "restuarant",
     },
     {
-      src: "src/lu-pic/stay.jpg",
-      alt: "",
-      title: "Plan a magical winter break in Dublin",
-      text: "where to stay",
-      category: "castle",
+      src: "src/lu-pic/indoor-4.jpg",
+      alt: "indoor",
+      title: "The Church",
+      text: "international",
+      category: "restuarant",
     },
   ];
 
@@ -111,33 +111,33 @@ $(document).ready(function () {
   // Dynamically generate second row - food n drinks
   const outdoorPlaces = [
     {
-      src: "src/lu-pic/stay.jpg",
-      alt: "",
+      src: "src/lu-pic/outdoor-coastal.jpg",
+      alt: "coastal",
+      title: "Dublin Coastal Hike, Pints & Puppies",
+      text: "outdoor",
+      category: "hiking",
+    },
+    {
+      src: "src/lu-pic/outdoor-boat.jpg",
+      alt: "Boat",
       title:
-        "Plan a magical winter break in DublinPlan a magical winter break in Dublin",
-      text: "where to stay",
-      category: "castle",
+        "1 Hour Boat Trip from Howth to Dun Laoghaire",
+      text: "outdoor",
+      category: "boat trip",
     },
     {
-      src: "src/lu-pic/stay.jpg",
-      alt: "",
-      title: "Plan a magical winter break",
-      text: "where to stay",
-      category: "castle",
+      src: "src/lu-pic/outdoor-cliff.jpg",
+      alt: "cliff",
+      title: "Cliffs of Moher Tour",
+      text: "outdoor",
+      category: "hiking",
     },
     {
-      src: "src/lu-pic/stay.jpg",
-      alt: "",
-      title: "Plan a magical winter break in Dublin",
-      text: "where to stay",
-      category: "castle",
-    },
-    {
-      src: "src/lu-pic/stay.jpg",
-      alt: "",
-      title: "Plan a magical winter break in Dublin",
-      text: "where to stay",
-      category: "castle",
+      src: "src/lu-pic/outdoor-cliff.jpg",
+      alt: "cliff",
+      title: "Howth Coastal Half-Day Bus Tour",
+      text: "outdoor",
+      category: "bus tour",
     },
   ];
 

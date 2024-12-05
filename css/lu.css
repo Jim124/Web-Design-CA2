@@ -82,10 +82,11 @@ button {
 }
 
 .card .img-fluid {
-    height: 250px !important;
+    height: 220px !important;
 }
 
 .img-fluid2 {
+    width: 250px !important;
     height: 150px !important;
 }
 
