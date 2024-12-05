@@ -361,7 +361,7 @@ consept
 
 /* 画像背景 */
 .concept-img {
-  background-image: url('../assets/images/outdoor1.jpg');
+  background-image: url('../src/assets/images/outdoor1.jpg');
   background-position: center;
   background-size: cover;
   height: 340px;
@@ -371,11 +371,11 @@ consept
 }
 
 #concept-two .concept-img {
-  background-image: url('src/assets/images/outdoor2.jpg');
+  background-image: url('../src/assets/images/outdoor2.jpg');
 }
 
 #concept-three .concept-img {
-  background-image: url('src/assets/images/outdoor1.jpg');
+  background-image: url('../src/assets/images/outdoor1.jpg');
 }
 
 /* 背景テキスト */
