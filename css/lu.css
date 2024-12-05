@@ -81,6 +81,14 @@ button {
     background-color: #FFFBE6;
 }
 
+.card .img-fluid {
+    height: 250px !important;
+}
+
+.img-fluid2 {
+    height: 150px !important;
+}
+
 
 .card-body .title {
     font-size: 15px !important;
@@ -168,6 +176,7 @@ button {
 
 .content-fne .card {
 /*    max-width: 250px;*/
+    background-color: #FFFBE6;
 }
 
 /*--------------------sign up page--------------------*/

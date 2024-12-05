@@ -1,49 +1,54 @@
 $(document).ready(function () {
-	console.log('lu-index-signup.js is loaded');
-	const slides = [
-    { alt: 'slide1', src: 'src/lu-pic/slide1.jpg' },
-    { alt: 'slide2', src: 'src/lu-pic/slide2.jpg' },
-    { alt: 'slide3', src: 'src/lu-pic/slide3.jpg' },
-    { alt: 'slide4', src: 'src/lu-pic/slide4.jpg' }
-    ];
-	// Dynamically generate silde pic
+  const slides = [
+    { alt: "slide1", src: "src/lu-pic/slide1.jpg" },
+    { alt: "slide2", src: "src/lu-pic/slide2.jpg" },
+    { alt: "slide3", src: "src/lu-pic/slide3.jpg" },
+    { alt: "slide4", src: "src/lu-pic/slide4.jpg" },
+  ];
+  // Dynamically generate silde pic
   $.each(slides, function (index, item) {
-    $('.carousel-inner').append(`
-     <div class="carousel-item ${index === 0 ? 'active' : ''}">
-     <img src="${item.src}" class="d-block w-100 h-100 object-fit-cover" alt="${item.alt}">
+    $(".carousel-inner").append(`
+     <div class="carousel-item ${index === 0 ? "active" : ""}">
+     <img src="${
+       item.src
+     }" class="d-block w-100 h-100 object-fit-cover" alt="${item.alt}">
      </div>
     `);
   });
 
   // Dynamically generate first row - where to stay
   const stayPlaces = [
-  { 
-    src: 'src/lu-pic/stay.jpg', alt:"", 
-    title:"Plan a magical winter break in DublinPlan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', alt:"", 
-    title:"Plan a magical winter break",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', alt:"", 
-    title:"Plan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', alt:"", 
-    title:"Plan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle"
-  }
+    {
+      src: "src/images/tent-2.jpg",
+      alt: "tent",
+      title: "Experience the Charm of Winter Camping",
+      text: "where to stay",
+      category: "tent",
+    },
+    {
+      src: "src/images/hotel.jpg",
+      alt: "",
+      title: "Luxury Awaits: Your Winter Getaway in Dublin",
+      text: "where to stay",
+      category: "hotel",
+    },
+    {
+      src: "src/images/cabin-1.jpg",
+      alt: "cabin",
+      title: "Cozy Cabins: A Magical Winter Retreat in Dublin",
+      text: "where to stay",
+      category: "cabin",
+    },
+    {
+      src: "src/images/caravan-2.jpg",
+      alt: "caravan",
+      title: "Adventurous Winter Break: Discover Dublin in a Caravan",
+      text: "where to stay",
+      category: "caravan",
+    },
   ];
   $.each(stayPlaces, function (index, item) {
-    $('.content-stay').append(`
+    $(".content-stay").append(`
       <div class="flex-shrink-0">         
         <div class="card">
           <img src="${item.src}" class="card-img-top img-fluid" alt="${item.alt}">
@@ -55,43 +60,45 @@ $(document).ready(function () {
       </div>
       `);
   });
-    // Dynamically generate second row - food n drinks
+  // Dynamically generate second row - food n drinks
   const indoorPlaces = [
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in DublinPlan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle",
-
-  }
+    {
+      src: "src/lu-pic/stay.jpg",
+      alt: "",
+      title:
+        "Plan a magical winter break in DublinPlan a magical winter break in Dublin",
+      text: "where to stay",
+      category: "castle",
+    },
+    {
+      src: "src/lu-pic/stay.jpg",
+      alt: "",
+      title: "Plan a magical winter break",
+      text: "where to stay",
+      category: "castle",
+    },
+    {
+      src: "src/lu-pic/stay.jpg",
+      alt: "",
+      title: "Plan a magical winter break in Dublin",
+      text: "where to stay",
+      category: "castle",
+    },
+    {
+      src: "src/lu-pic/stay.jpg",
+      alt: "",
+      title: "Plan a magical winter break in Dublin",
+      text: "where to stay",
+      category: "castle",
+    },
   ];
 
   $.each(indoorPlaces, function (index, item) {
-    $('.content-fnd').append(`
+    $(".content-fnd").append(`
       <div class="col col-sm-6 d-flex justify-content-center">
-        <div class="card mb-2 ${(index === 2 || index === 3) ? 'd-none d-md-block' : ''}">
+        <div class="card mb-2 ${
+          index === 2 || index === 3 ? "d-none d-md-block" : ""
+        }">
           <img src="${item.src}" class="card-img-top" alt="${item.alt}">
           <div class="card-body">
             <div class="text">${item.text} · ${item.category}</div>
@@ -103,38 +110,39 @@ $(document).ready(function () {
   });
   // Dynamically generate second row - food n drinks
   const outdoorPlaces = [
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in DublinPlan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle"
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle"
-  }
+    {
+      src: "src/lu-pic/stay.jpg",
+      alt: "",
+      title:
+        "Plan a magical winter break in DublinPlan a magical winter break in Dublin",
+      text: "where to stay",
+      category: "castle",
+    },
+    {
+      src: "src/lu-pic/stay.jpg",
+      alt: "",
+      title: "Plan a magical winter break",
+      text: "where to stay",
+      category: "castle",
+    },
+    {
+      src: "src/lu-pic/stay.jpg",
+      alt: "",
+      title: "Plan a magical winter break in Dublin",
+      text: "where to stay",
+      category: "castle",
+    },
+    {
+      src: "src/lu-pic/stay.jpg",
+      alt: "",
+      title: "Plan a magical winter break in Dublin",
+      text: "where to stay",
+      category: "castle",
+    },
   ];
 
   $.each(outdoorPlaces, function (index, item) {
-  $('.outdoor-items').append(`
+    $(".outdoor-items").append(`
     <div class="flex-shrink-0 pb-3">         
       <div class="card">
         <img src="${item.src}" class="card-img-top img-fluid" alt="${item.alt}">
@@ -145,71 +153,74 @@ $(document).ready(function () {
       </div>
     </div>
   `);
-});
+  });
 
   // Dynamically generate forth row - festival n events
-  // calculate the rest day 
-  function calDateDiff(estimate){
+  // calculate the rest day
+  function calDateDiff(estimate) {
     const now = new Date();
     const newDate = new Date(estimate);
     let diff = newDate - now;
     let diffDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
     let res = "";
     if (diffDays < 0) {
-      res = "The event was finished";
+      res = "Oops, finished";
     } else {
       res = `Starts in ${diffDays} days`;
     }
     return res;
-}
+  }
 
   const festivalNEvents = [
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in DublinPlan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle",
-    date: "2024-12-30",
-    diff: calDateDiff("2024-12-30")
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break",
-    text: "where to stay",
-    category: "castle",
-        date: "2024-12-29",
-    diff: calDateDiff("2024-12-29")
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle",
-    date: "2024-12-01",
-    diff: calDateDiff("2024-12-01")
-  },
-  { 
-    src: 'src/lu-pic/stay.jpg', 
-    alt:"", 
-    title:"Plan a magical winter break in Dublin",
-    text: "where to stay",
-    category: "castle",
-    date: "2024-12-31",
-    diff: calDateDiff("2024-12-31")
-  }
+    {
+      src: "src/images/christmas-spinner.jpg",
+      alt: "",
+      title:
+        "Plan a magical winter break in DublinPlan a magical winter break in Dublin",
+      text: "where to stay",
+      category: "festival",
+      date: "2024-12-30",
+      diff: calDateDiff("2024-12-30"),
+    },
+    {
+      src: "src/images/comedy-2.jpg",
+      alt: "",
+      title: "Plan a magical winter break",
+      text: "events",
+      category: "comedy",
+      date: "2025-1-30",
+      diff: calDateDiff("2025-01-30"),
+    },
+    {
+      src: "src/images/music-3.jpg",
+      alt: "",
+      title: "Plan a magical winter break in Dublin",
+      text: "events",
+      category: "music",
+      date: "2024-12-01",
+      diff: calDateDiff("2024-12-01"),
+    },
+    {
+      src: "src/images/theater-4.jpg",
+      alt: "",
+      title: "Plan a magical winter break in Dublin",
+      text: "events",
+      category: "theater",
+      date: "2024-12-31",
+      diff: calDateDiff("2024-12-31"),
+    },
   ];
   $.each(festivalNEvents, function (index, item) {
-    $('.content-fne').append(`
+    $(".content-fne").append(`
       <div class="col col-sm-6 d-flex justify-content-center">
-        <div class="card mb-2 ${(index === 2 || index === 3) ? 'd-none d-md-block' : ''}">
-          <img src="${item.src}" class="card-img-top" alt="${item.alt}">
+        <div class="card mb-2 ${
+          index === 2 || index === 3 ? "d-none d-md-block" : ""
+        }">
+          <img src="${item.src}" class="card-img-top img-fluid2" alt="${item.alt}">
           <div class="card-body text-center">
             <div class="text">${item.text} · ${item.category}</div>
             <div class="title georgia">${item.title}</div>
-            <div class="text date">Starts date: ${item.date}</div>
+            <div class="text date">Date: ${item.date}</div>
             <div class="text">${item.diff}</div>
           </div>
         </div>
@@ -217,41 +228,40 @@ $(document).ready(function () {
     `);
   });
   // --------------sign up page-------------
-  // city option 
+  // city option
   const cities = [
     "Dublin",
-    "Cork", 
-    "Galway", 
-    "Limerick", 
-    "Waterford", 
-    "Sligo", 
-    "Wexford"
-    ];
-    $.each(cities, function (index, item) {
-    $('.form-select').append(`
+    "Cork",
+    "Galway",
+    "Limerick",
+    "Waterford",
+    "Sligo",
+    "Wexford",
+  ];
+  $.each(cities, function (index, item) {
+    $(".form-select").append(`
       <option value="${item}">${item}</option>
       </div>
     `);
   });
 
-
   // validate when submit all the information
   $("#sign-up-form").on("submit", function (event) {
-  // prevent default submit
+    // prevent default submit
     event.preventDefault();
-  // if the form validation
+    // if the form validation
     let isValid = true;
 
-  // validate name
+    // validate name
     const nameInput = document.getElementById("inputName");
     if (nameInput.value.length < 4) {
       nameInput.classList.add("is-invalid");
       isValid = false;
     } else {
       nameInput.classList.remove("is-invalid");
-    };
+    }
 
-  // validate email 
+    // validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const emailInput = document.getElementById("inputEmail");
     if (!emailRegex.test(emailInput.value)) {
@@ -259,9 +269,9 @@ $(document).ready(function () {
       isValid = false;
     } else {
       emailInput.classList.remove("is-invalid");
-    };
+    }
 
-  // validate password 
+    // validate password
     const pwdInput = document.getElementById("inputPassword");
     const pswRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
     if (!pswRegex.test(pwdInput.value)) {
@@ -269,37 +279,37 @@ $(document).ready(function () {
       isValid = false;
     } else {
       pwdInput.classList.remove("is-invalid");
-    };
+    }
 
-  // through all the viladation, submit all info
+    // through all the viladation, submit all info
     if (isValid) {
       alert("Form submitted successfully!");
       this.submit();
-      window.location.href="index.html";
+      window.location.href = "index.html";
     }
   });
 
   // navigate to ohter pages
   // get each button by id
-  const btnForStay = document.getElementById('stayBtn');
-  const btnForFnd = document.getElementById('fndBtn');
-  const btnForOutdoor = document.getElementById('outdoorBtn');
-  const btnForFne = document.getElementById('fneBtn');
+  const btnForStay = document.getElementById("stayBtn");
+  const btnForFnd = document.getElementById("fndBtn");
+  const btnForOutdoor = document.getElementById("outdoorBtn");
+  const btnForFne = document.getElementById("fneBtn");
 
   // bind a click event
-  btnForStay.addEventListener('click', () => {
-    window.location.href = 'live.html';
+  btnForStay.addEventListener("click", () => {
+    window.location.href = "live.html";
   });
 
-  btnForFnd.addEventListener('click', () => {
-    window.location.href = 'food_drinks.html';
+  btnForFnd.addEventListener("click", () => {
+    window.location.href = "food_drinks.html";
   });
 
-  btnForOutdoor.addEventListener('click', () => {
-    window.location.href = 'outdoor.html';
+  btnForOutdoor.addEventListener("click", () => {
+    window.location.href = "outdoor.html";
   });
 
-  btnForFne.addEventListener('click', () => {
-    window.location.href = 'festival.html';
+  btnForFne.addEventListener("click", () => {
+    window.location.href = "festival.html";
   });
-})
+});
