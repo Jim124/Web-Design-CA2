@@ -32,7 +32,7 @@ p{
 /* #FFFBE6 */
 /* #FF9100 */
 .total{
-  border:1px solid #D5ED9F;
+  border:0 solid #D5ED9F;
   background-color:#D5ED9F;
 }
 .winter{
@@ -40,8 +40,8 @@ p{
   flex-direction: column;
   justify-content:center;
   align-items:start;
-  height:400px;
-  margin:0 20px;
+  /* height:400px; */
+  margin:50px 20px;
 }
 .heading-winter{
   color:#002855;
