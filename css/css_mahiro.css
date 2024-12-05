@@ -389,7 +389,7 @@ consept
   top: 0;
   right: 0;
   transform: translateY(-80%);
-  z-index: -1; /* 背景として扱う */
+  z-index: 0; /* 背景として扱う */
 }
 
 .flex {
