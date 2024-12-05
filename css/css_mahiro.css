@@ -16,29 +16,6 @@ h1 {
 }	
 
 
-/*Fixed Header*/
-header {
-	position: fixed; /* fixed header on the top of the screen */
-	top: 0;          /* put on the top of the screen */
-	left: 0;        
-	width: 100%;   
-	z-index: 1000;   /* position at the top */
-	background-color: #FFFBE6; 
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-}
-/* show on desktop */
-.desktop-only {
-	display: block; 
-}
-
-/* for the small screen */
-@media (max-width: 1000px) {
-  .desktop-only {
-    display: none; /* if less than 1000px, search and login, sign in won't show */
-  }
-}
-
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
