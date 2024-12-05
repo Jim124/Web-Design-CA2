@@ -1,0 +1,421 @@
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #493628;
+  background-color: #FFFBE6;
+  overflow-x: hidden;
+}
+
+h1 {
+	font-size: 5rem;
+    text-align: center;
+	color: #493628;
+
+}	
+
+
+/*Fixed Header*/
+header {
+	position: fixed; /* fixed header on the top of the screen */
+	top: 0;          /* put on the top of the screen */
+	left: 0;        
+	width: 100%;   
+	z-index: 1000;   /* position at the top */
+	background-color: #FFFBE6; 
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+/* show on desktop */
+.desktop-only {
+	display: block; 
+}
+
+/* for the small screen */
+@media (max-width: 1000px) {
+  .desktop-only {
+    display: none; /* if less than 1000px, search and login, sign in won't show */
+  }
+}
+
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* 
+---------------------------------------------
+banner
+--------------------------------------------- 
+*/
+
+.main-banner {
+  border-bottom: 3px dotted #eee;
+  padding-top: 160px;
+  padding-bottom: 30px;
+}
+
+.main-banner .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* コンテナ内に収まるようにトリミング */
+}
+
+.main-banner .left-content {
+  height: 100%; /* 左の画像を縦方向に伸ばす */
+}
+
+.main-banner .right-content .thumb img {
+  height: 250px; /* 右側の画像の高さを固定 */
+  object-fit: cover; /* 画像をトリミング */
+}
+
+@media (max-width: 768px) { /* スマートフォン対応 */
+  .main-banner .right-content .thumb img {
+    height: 200px; /* 高さを調整 */
+  }
+}
+
+.left-content .inner-content {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-content .inner-content h4 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.right-content .thumb .left-content .inner-content span {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* Rright 4 pictures */
+.right-content .inner-content {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 50%;
+ text-align: center;
+  transform: translateY(-50%);
+}
+
+.inner-content h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.right-content .thumb .inner-content span {
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+}
+
+.right-content .thumb {
+  position: relative; /* 親要素を基準にする */
+  overflow: hidden;   /* 子要素が画像の範囲を超えないようにする */
+}
+
+.right-content .thumb .hover-content {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  bottom: 15px;
+  text-align: center;
+  background-color: rgba(42, 42, 42, 0.97);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Hover effect */
+.right-content .thumb:hover .hover-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Centered text inside hover-content */
+.right-content .thumb .hover-content .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/* Hover text styles */
+.right-content .thumb .hover-content h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.right-content .thumb .hover-content p {
+  color: #fff;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+
+/* Button CSS*/
+.main-border-button a  {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.main-border-button a:hover {
+  background-color: #fff;
+}
+
+.main-border-button a:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+.main-border-button a{
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+/*
+---------------------------------------------
+Restaurants
+---------------------------------------------
+*/
+
+/* 画像の親コンテナを固定サイズにする */
+#restaurants .thumb {
+  width: 100%;           /* 横幅を100%に */
+  height: 200px;         /* 高さを固定 */
+  overflow: hidden;      /* はみ出した部分を非表示 */
+  position: relative;    /* 子要素の位置制御用 */
+}
+
+/* 画像をコンテナに収める */
+#restaurants .thumb img {
+  width: 50%;           /* 横幅を親要素に合わせる */
+  height: 100%;          /* 高さも親要素に合わせる */
+  object-fit: cover;     /* 縦横比を維持しつつ切り抜き */
+}
+
+
+/*
+---------------------------------------------
+consept
+---------------------------------------------
+*/
+
+#concept, #concept-two, #concept-three {
+  margin-bottom: 120px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500; /* 修正: pxは不要 */
+  color: #80BA4A;
+  margin-bottom: 60px;
+}
+
+#concept h3 {
+  font-size: 20px;
+  font-weight: 500; /* 修正: pxは不要 */
+  color: #80BA4A;
+  margin-bottom: 40px;
+}
+
+/* コンテナ */
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* レイアウト調整 */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.column-2 {
+  width: 48%; /* 2カラム構成 */
+}
+
+/* テキスト */
+.text {
+  line-height: 2;
+  color: #333; /* 視認性を考慮した濃い文字色 */
+}
+
+/* 画像背景 */
+.concept-img {
+  background-image: url('assets/images/outdoor3.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0; /* 他の要素と衝突しないように調整 */
+}
+
+#concept-two .concept-img {
+  background-image: url('assets/images/outdoor2.jpg');
+}
+
+#concept-three .concept-img {
+  background-image: url('assets/images/outdoor1.jpg');
+}
+
+/* 背景テキスト */
+.heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  font-weight: 600;
+  color: #80BA4A;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-80%);
+  z-index: -1; /* 背景として扱う */
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column; /* 横並びを縦並びに変更 */
+    align-items: stretch;  /* 各要素を幅いっぱいに */
+  }
+
+  .column-2 {
+    width: 100%; /* 各カラムの幅を100%に */
+    margin-bottom: 20px; /* セクション間に余白を追加 */
+  }
+
+  .concept-img {
+    height: 200px; /* 高さを調整（必要に応じて変更） */
+  }
+
+  .text {
+    text-align: center; /* テキストを中央寄せに */
+  }
+}
