@@ -65,31 +65,30 @@ $(document).ready(function () {
     {
       src: "src/lu-pic/indoor-1.jpg",
       alt: "indoor",
-      title:
-        "Ryleigh's",
+      title: "Ryleigh's",
       text: "grill",
-      category: "restuarant",
+      category: "food",
     },
     {
       src: "src/lu-pic/indoor-2.jpg",
       alt: "indoor",
       title: "WILDE Restaurant",
       text: "fusion",
-      category: "restuarant",
+      category: "food",
     },
     {
       src: "src/lu-pic/indoor-3.jpg",
       alt: "indoor",
       title: "FIRE Steakhouse and Bar",
       text: "steak",
-      category: "restuarant",
+      category: "food",
     },
     {
       src: "src/lu-pic/indoor-4.jpg",
       alt: "indoor",
       title: "The Church",
       text: "international",
-      category: "restuarant",
+      category: "food",
     },
   ];
 
@@ -120,8 +119,7 @@ $(document).ready(function () {
     {
       src: "src/lu-pic/outdoor-boat.jpg",
       alt: "Boat",
-      title:
-        "1 Hour Boat Trip from Howth to Dun Laoghaire",
+      title: "1 Hour Boat Trip from Howth to Dun Laoghaire",
       text: "outdoor",
       category: "boat trip",
     },
@@ -183,7 +181,7 @@ $(document).ready(function () {
       diff: calDateDiff("2024-12-30"),
     },
     {
-      src: "src/images/comedy-2.jpg",
+      src: "src/images/comedy-3.jpg",
       alt: "",
       title: "Plan a magical winter break",
       text: "events",
@@ -216,7 +214,9 @@ $(document).ready(function () {
         <div class="card mb-2 ${
           index === 2 || index === 3 ? "d-none d-md-block" : ""
         }">
-          <img src="${item.src}" class="card-img-top img-fluid2" alt="${item.alt}">
+          <img src="${
+            item.src
+          }" class="card-img-top img-fluid2" alt="${item.alt}">
           <div class="card-body text-center">
             <div class="text">${item.text} · ${item.category}</div>
             <div class="title georgia">${item.title}</div>
