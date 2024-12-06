@@ -62,4 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
   
-  
+  const buttons = document.querySelectorAll('.carousel-indicators2 button');
+
+  // 各ボタンにクリックイベントリスナーを追加
+  buttons.forEach(button => {
+    button.addEventListener('click', function(event) {
+      // クリックされたボタンの情報を表示
+      const slideTo = event.target.getAttribute('data-bs-slide-to');
+      console.log(`Slide ${slideTo} がクリックされました`);
+      
+      // 必要に応じて追加のアクションをここに書けます
+    });
+  });  
