@@ -23,25 +23,14 @@ Outdoor Page start --- Carousel
 }
 
 .carousel-caption {
-  position: absolute; /* 位置をスライドに対して絶対配置 */
-  bottom: 2rem; /* 固定した高さ（必要に応じて調整） */
-  left: 50%; /* 水平方向中央揃え */
-  transform: translateX(-50%); /* 中央揃えの補正 */
-  max-width: 70%; /* キャプションの横幅を制限 */
-  text-align: center; /* テキスト中央揃え */
-  z-index: 10; /* 他要素の上に配置 */
+  bottom: 3rem;
+  z-index: 10;
 }
 
 .carousel-item {
   height: 32rem;
 }
 
-.carousel-inner {
-  display: flex;
-  align-items: center; /* キャプションを上下中央揃えに */
-  justify-content: center; /* 水平方向で中央揃えに */
-  height: 100%; /* 高さを親要素全体に広げる */
-}
 
 
 /* RESPONSIVE CSS */
