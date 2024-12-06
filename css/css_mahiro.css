@@ -307,6 +307,7 @@ Outdoor start -- consept
 
 #concept-pubs .concept-img {
   background-image: url('../src/assets/images/pub1.jpg');
+  z-index: 10; 
 }
 
 
