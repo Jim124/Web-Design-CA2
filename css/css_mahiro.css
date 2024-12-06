@@ -210,20 +210,6 @@ Restaurants
 ---------------------------------------------
 */
 
-/* General Module Styling */
-.concept-pubs {
-  background-color:#A5B68D;
-	width: 100%;
-	margin: 0;
-	padding-bottom: 3rem;
-}
-
-/*
----------------------------------------------
-cafe and pubs
----------------------------------------------
-*/
-
 /* 画像の親コンテナを固定サイズにする */
 #restaurants .thumb {
   width: 100%;           /* 横幅を100%に */
@@ -239,6 +225,32 @@ cafe and pubs
   object-fit: cover;     /* 縦横比を維持しつつ切り抜き */
 }
 
+/*
+---------------------------------------------
+cafe and pubs
+---------------------------------------------
+*/
+
+.concept-pubs {
+  background-color:#A5B68D;
+	width: 100%;
+	margin: 0;
+	padding-bottom: 3rem 0;
+}
+
+.concept-pubs .title-pubs {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff; /* タイトルを目立たせる白色 */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pub-img {
+  width: 100%; /* 親要素に合わせて画像を拡大縮小 */
+  height: auto; /* アスペクト比を保つ */
+  border-radius: 10px; /* 角を丸くする */
+}
 
 /*
 ---------------------------------------------
@@ -304,13 +316,6 @@ Outdoor start -- consept
 #concept-three .concept-img {
   background-image: url('../src/assets/images/outdoor1.jpg');
 }
-
-#concept-pubs .concept-img {
-  background-image: url('../src/assets/images/pub1.jpg');
-  z-index: 10; 
-}
-
-
 
 .heading {
   font-family: 'Dancing Script', cursive; /* background transparent text */
