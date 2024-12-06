@@ -305,6 +305,12 @@ Outdoor start -- consept
   background-image: url('../src/assets/images/outdoor1.jpg');
 }
 
+#concept-pubs .concept-img {
+  background-image: url('../src/assets/images/pub1.jpg');
+}
+
+
+
 .heading {
   font-family: 'Dancing Script', cursive; /* background transparent text */
   font-size: 100px;
