@@ -23,13 +23,26 @@ Outdoor Page start --- Carousel
 }
 
 .carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+  position: absolute; /* 位置をスライドに対して絶対配置 */
+  bottom: 2rem; /* 固定した高さ（必要に応じて調整） */
+  left: 50%; /* 水平方向中央揃え */
+  transform: translateX(-50%); /* 中央揃えの補正 */
+  max-width: 70%; /* キャプションの横幅を制限 */
+  text-align: center; /* テキスト中央揃え */
+  z-index: 10; /* 他要素の上に配置 */
 }
 
 .carousel-item {
   height: 32rem;
 }
+
+.carousel-inner {
+  display: flex;
+  align-items: center; /* キャプションを上下中央揃えに */
+  justify-content: center; /* 水平方向で中央揃えに */
+  height: 100%; /* 高さを親要素全体に広げる */
+}
+
 
 /* RESPONSIVE CSS */
 @media (min-width: 40em) {
@@ -227,7 +240,7 @@ Restaurants
 
 /*
 ---------------------------------------------
-consept
+Outdoor start -- consept
 ---------------------------------------------
 */
 
@@ -237,19 +250,18 @@ consept
 
 .title {
   font-size: 20px;
-  font-weight: 500; /* 修正: pxは不要 */
+  font-weight: 500;
   color: #80BA4A;
   margin-bottom: 60px;
 }
 
 #concept h3 {
   font-size: 20px;
-  font-weight: 500; /* 修正: pxは不要 */
+  font-weight: 500; 
   color: #80BA4A;
   margin-bottom: 40px;
 }
 
-/* コンテナ */
 .container {
   width: 90%;
   max-width: 1120px;
@@ -257,7 +269,6 @@ consept
   position: relative;
 }
 
-/* レイアウト調整 */
 .flex {
   display: flex;
   justify-content: space-between;
@@ -265,18 +276,15 @@ consept
   align-items: center;
 }
 
-
 .column-2 {
-  width: 48%; /* 2カラム構成 */
+  width: 48%; 
 }
 
-/* テキスト */
 .text {
   line-height: 2;
   color: #333; /* 視認性を考慮した濃い文字色 */
 }
 
-/* 画像背景 */
 .concept-img {
   background-image: url('../src/assets/images/outdoor1.jpg');
   background-position: center;
@@ -284,7 +292,7 @@ consept
   height: 340px;
   border-radius: 10px;
   position: relative;
-  z-index: 1; /* 他の要素と衝突しないように調整 */
+  z-index: 1; 
 }
 
 #concept-two .concept-img {
@@ -295,9 +303,8 @@ consept
   background-image: url('../src/assets/images/outdoor1.jpg');
 }
 
-/* 背景テキスト */
 .heading {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive; /* background transparent text */
   font-size: 100px;
   font-weight: 600;
   color: #80BA4A;
@@ -306,7 +313,7 @@ consept
   top: 0;
   right: 0;
   transform: translateY(-80%);
-  z-index: 0; /* 背景として扱う */
+  z-index: 0; 
 }
 
 .flex {
@@ -316,24 +323,23 @@ consept
   align-items: center;
 }
 
-/* レスポンシブ対応 */
 @media (max-width: 768px) {
   .flex {
-    flex-direction: column; /* 横並びを縦並びに変更 */
-    align-items: stretch;  /* 各要素を幅いっぱいに */
+    flex-direction: column; 
+    align-items: stretch;  
   }
 
   .column-2 {
-    width: 100%; /* 各カラムの幅を100%に */
-    margin-bottom: 20px; /* セクション間に余白を追加 */
+    width: 100%; /* each column's width */
+    margin-bottom: 20px; /* space between each sections */
   }
 
   .concept-img {
-    height: 200px; /* 高さを調整（必要に応じて変更） */
+    height: 200px; 
   }
 
   .text {
-    text-align: center; /* テキストを中央寄せに */
+    text-align: center; 
   }
 }
 
