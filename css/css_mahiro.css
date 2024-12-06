@@ -43,11 +43,10 @@ Outdoor Page start --- Carousel
 }
 
 .carousel-item img {
-  width: 100%; /* 幅を全画面に */
-  height: 100%; /* 高さを全画面に */
-  object-fit: cover; /* アスペクト比を維持しつつ拡大 */
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
 }
-
 
 /* RESPONSIVE CSS */
 @media (min-width: 40em) {
@@ -80,7 +79,6 @@ Outdoor start -- consept
 #concept, #concept-two, #concept-three {
   margin-bottom: 120px;
   margin-top: 100px;
-
 }
 
 /* section1-animation */
@@ -157,7 +155,7 @@ Outdoor start -- consept
 }
 
 .concept-img {
-  background-image: url('assets/images/outdoor3.jpg');
+  background-image: url('..src/assets/images/outdoor3.jpg');
   background-position: center;
   background-size: cover;
   height: 340px;
@@ -167,11 +165,11 @@ Outdoor start -- consept
 }
 
 #concept-two .concept-img {
-  background-image: url('assets/images/outdoor2.jpg');
+  background-image: url('..src/assets/images/outdoor2.jpg');
 }
 
 #concept-three .concept-img {
-  background-image: url('assets/images/outdoor1.jpg');
+  background-image: url('..src/assets/images/outdoor1.jpg');
 }
 
 
