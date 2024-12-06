@@ -155,7 +155,7 @@ Outdoor start -- consept
 }
 
 .concept-img {
-  background-image: url('..src/assets/images/outdoor3.jpg');
+  background-image: url('src/assets/images/outdoor3.jpg');
   background-position: center;
   background-size: cover;
   height: 340px;
@@ -165,11 +165,11 @@ Outdoor start -- consept
 }
 
 #concept-two .concept-img {
-  background-image: url('..src/assets/images/outdoor2.jpg');
+  background-image: url('src/assets/images/outdoor2.jpg');
 }
 
 #concept-three .concept-img {
-  background-image: url('..src/assets/images/outdoor1.jpg');
+  background-image: url('src/assets/images/outdoor1.jpg');
 }
 
 
