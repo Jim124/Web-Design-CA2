@@ -107,7 +107,7 @@ $(document).ready(function () {
       </div>
     `);
   });
-  // Dynamically generate second row - food n drinks
+  // Dynamically generate third row - outdoor
   const outdoorPlaces = [
     {
       src: "src/lu-pic/outdoor-coastal.jpg",
@@ -131,8 +131,8 @@ $(document).ready(function () {
       category: "hiking",
     },
     {
-      src: "src/lu-pic/outdoor-cliff.jpg",
-      alt: "cliff",
+      src: "src/lu-pic/outdoor-howth.jpg",
+      alt: "howth",
       title: "Howth Coastal Half-Day Bus Tour",
       text: "outdoor",
       category: "bus tour",
