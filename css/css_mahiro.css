@@ -12,7 +12,6 @@ h1 {
 
 }	
 
-
 /* 
 ---------------------------------------------
 Outdoor Page start --- Carousel
@@ -30,8 +29,6 @@ Outdoor Page start --- Carousel
 .carousel-item {
   height: 32rem;
 }
-
-
 
 /* RESPONSIVE CSS */
 @media (min-width: 40em) {
