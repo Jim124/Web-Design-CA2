@@ -172,9 +172,8 @@ $(document).ready(function () {
   const festivalNEvents = [
     {
       src: "src/images/christmas-spinner.jpg",
-      alt: "",
-      title:
-        "Plan a magical winter break in DublinPlan a magical winter break in Dublin",
+      alt: "spinner",
+      title: "Magical Winter Break in Dublin",
       text: "where to stay",
       category: "festival",
       date: "2024-12-30",
@@ -182,8 +181,8 @@ $(document).ready(function () {
     },
     {
       src: "src/images/comedy-3.jpg",
-      alt: "",
-      title: "Plan a magical winter break",
+      alt: "comedy",
+      title: "Comedy Show in January",
       text: "events",
       category: "comedy",
       date: "2025-1-30",
@@ -191,17 +190,17 @@ $(document).ready(function () {
     },
     {
       src: "src/images/music-3.jpg",
-      alt: "",
-      title: "Plan a magical winter break in Dublin",
+      alt: "music",
+      title: "Music event in December",
       text: "events",
       category: "music",
       date: "2024-12-01",
       diff: calDateDiff("2024-12-01"),
     },
     {
-      src: "src/images/theater-4.jpg",
-      alt: "",
-      title: "Plan a magical winter break in Dublin",
+      src: "src/images/theater-1.jpg",
+      alt: "theater",
+      title: "Theater Show on New Year's Eve",
       text: "events",
       category: "theater",
       date: "2024-12-31",
