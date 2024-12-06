@@ -210,6 +210,86 @@ Restaurants
 ---------------------------------------------
 */
 
+/* General Module Styling */
+.module {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.module-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.module-text {
+  flex: 1;
+  padding: 10px;
+}
+
+.module-text h2 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.module-text p {
+  margin: 0 0 15px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.module-button .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.module-button .button:hover {
+  background-color: #0056b3;
+}
+
+.module-image {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.module-image picture img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .module-content {
+    flex-direction: column;
+  }
+
+  .module-image {
+    margin-top: 20px;
+  }
+}
+
+/*
+---------------------------------------------
+cafe and pubs
+---------------------------------------------
+*/
+
 /* 画像の親コンテナを固定サイズにする */
 #restaurants .thumb {
   width: 100%;           /* 横幅を100%に */
