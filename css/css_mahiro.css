@@ -9,9 +9,17 @@ h1 {
 	font-size: 5rem;
     text-align: center;
 	color: #FEF9F2;
-
 }	
 
+h2{
+	font-weight: bold;
+	color: #FF9100;
+}
+
+h5 {
+	font-weight: bold;
+	color: #000;
+}
 /* 
 ---------------------------------------------
 Outdoor Page start --- Carousel
@@ -23,13 +31,23 @@ Outdoor Page start --- Carousel
 }
 
 .carousel-caption {
+  padding-top: 4rem;
   bottom: 3rem;
-  z-index: 10;
+  text-align: center;
 }
 
 .carousel-item {
-  height: 32rem;
+  height: 50vh;
+  position: relative;
+
 }
+
+.carousel-item img {
+  width: 100%; /* 幅を全画面に */
+  height: 100%; /* 高さを全画面に */
+  object-fit: cover; /* アスペクト比を維持しつつ拡大 */
+}
+
 
 /* RESPONSIVE CSS */
 @media (min-width: 40em) {
@@ -39,11 +57,208 @@ Outdoor Page start --- Carousel
     line-height: 1.4;
   }
 }
+/*
+---------------------------------------------
+Outdoor start -- consept
+---------------------------------------------
+*/
+
+/*concept-2 with background colour*/
+#concept-two {
+  background-color: #D5ED9F; /* 背景色を追加 */
+  padding: 5rem 0; /* 上下の余白 */
+}
+
+#concept-two .text {
+  color: #333; /* 背景に合わせた文字色 */
+}
+
+#concept-two .heading {
+  color: #00712D; /* タイトルの透明文字の色を目立たせる */
+}
+
+#concept, #concept-two, #concept-three {
+  margin-bottom: 120px;
+  margin-top: 100px;
+
+}
+
+/* section1-animation */
+#concept {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#concept.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* section3-animation */
+#concept-three .text,
+#concept-three .concept-img {
+  opacity: 0;
+  transform: translateY(30px); 
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#concept-three .text {
+  transform: translateX(-30px); 
+}
+
+#concept-three .concept-img {
+  transform: translateX(30px); 
+}
+
+#concept-three .text.visible,
+#concept-three .concept-img.visible {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #80BA4A;
+  margin-bottom: 60px;
+}
+
+#concept h3 {
+  font-size: 20px;
+  font-weight: 500; 
+  color: #80BA4A;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.column-2 {
+  width: 48%; 
+}
+
+.text {
+  line-height: 2;
+  color: #333; 
+}
+
+.concept-img {
+  background-image: url('assets/images/outdoor3.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10; 
+}
+
+#concept-two .concept-img {
+  background-image: url('assets/images/outdoor2.jpg');
+}
+
+#concept-three .concept-img {
+  background-image: url('assets/images/outdoor1.jpg');
+}
+
+
+.heading {
+  font-family: 'Dancing Script', cursive; /* background transparent text */
+  font-size: 80px;
+  font-weight: 600;
+  color: #80BA4A;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-80%);
+  z-index: 0; 
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column; 
+    align-items: stretch;  
+  }
+
+  .column-2 {
+    width: 100%; /* each column's width */
+    margin-bottom: 20px; /* space between each sections */
+  }
+
+  .concept-img {
+    height: 200px; 
+  }
+
+  .text {
+    text-align: center; 
+  }
+}
+
+/* 
+---------------------------------------------
+food_and_drinks / Bar&Pubs
+--------------------------------------------- 
+*/
+#concept-four {
+  background-color: #D5ED9F; /* 背景色を追加 */
+  padding: 5rem 0; /* 上下の余白 */
+}
+
+#concept-four .text {
+  color: #333; /* 背景に合わせた文字色 */
+}
+
+#concept-four .concept-img {
+  background-image: url('assets/images/pub1.jpg');
+}
+
+.concept-pubs {
+  background-color:#D5ED9F;
+	width: 100%;
+	margin: 0;
+	padding-bottom: 3rem 0;
+}
+
+.concept-pubs .title-pubs {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff; /* タイトルを目立たせる白色 */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pub-img {
+  width: 100%; /* 親要素に合わせて画像を拡大縮小 */
+  height: auto; /* アスペクト比を保つ */
+  border-radius: 10px; /* 角を丸くする */
+}
+
 
 
 /* 
 ---------------------------------------------
-banner
+food_and_drinks / banner
 --------------------------------------------- 
 */
 
@@ -167,7 +382,12 @@ banner
   margin-bottom: 20px;
 }
 
-/* Button CSS*/
+
+/* 
+---------------------------------------------
+Button CSS
+--------------------------------------------- 
+*/
 .main-border-button a  {
   background-color: #fbeee0;
   border: 2px solid #422800;
@@ -204,156 +424,59 @@ banner
 }
 
 
-/*
----------------------------------------------
-Restaurants
----------------------------------------------
-*/
 
-/* 画像の親コンテナを固定サイズにする */
-#restaurants .thumb {
-  width: 100%;           /* 横幅を100%に */
-  height: 200px;         /* 高さを固定 */
-  overflow: hidden;      /* はみ出した部分を非表示 */
-  position: relative;    /* 子要素の位置制御用 */
-}
-
-/* 画像をコンテナに収める */
-#restaurants .thumb img {
-  width: 50%;           /* 横幅を親要素に合わせる */
-  height: 100%;          /* 高さも親要素に合わせる */
-  object-fit: cover;     /* 縦横比を維持しつつ切り抜き */
-}
 
 /*
 ---------------------------------------------
-cafe and pubs
+Testimonial
 ---------------------------------------------
 */
-
-.concept-pubs {
-  background-color:#A5B68D;
-	width: 100%;
-	margin: 0;
-	padding-bottom: 3rem 0;
+.testimonial-carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
 }
 
-.concept-pubs .title-pubs {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff; /* タイトルを目立たせる白色 */
-  text-align: center;
-  margin-bottom: 2rem;
+.testimonial-item {
+    background-color: transparent;
+    border: 2px solid #ccc; 
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
 }
 
-.pub-img {
-  width: 100%; /* 親要素に合わせて画像を拡大縮小 */
-  height: auto; /* アスペクト比を保つ */
-  border-radius: 10px; /* 角を丸くする */
+.testimonial-item img {
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+    border-radius: 50%; 
 }
 
-/*
----------------------------------------------
-Outdoor start -- consept
----------------------------------------------
-*/
-
-#concept, #concept-two, #concept-three {
-  margin-bottom: 120px;
+.mytitle {
+    font-family: 'Poppins', cursive; /* おしゃれなフォントを指定 */
+    font-size: 2.5rem; /* フォントサイズを調整 */
+    color: #00712D; /* 色を変更 */
+    letter-spacing: 2px; /* 文字間隔を広げる */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 文字の影を追加 */
+    transition: all 0.3s ease; /* ホバー時にアニメーション */
 }
 
-.title {
-  font-size: 20px;
-  font-weight: 500;
-  color: #80BA4A;
-  margin-bottom: 60px;
+.mytitle:hover {
+    color: #FF9100; /* ホバー時に色を変える */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* 影を強調 */
 }
 
-#concept h3 {
-  font-size: 20px;
-  font-weight: 500; 
-  color: #80BA4A;
-  margin-bottom: 40px;
-}
 
-.container {
-  width: 90%;
-  max-width: 1120px;
-  margin: 0 auto;
-  position: relative;
-}
+.carousel-indicators2 button {
+            width: 20px;
+            height: 20px;
+left: 50%;
+            background-color: #ff7f00;
+            border-radius: 50%;
+            border: none;
+            opacity: 0.7;
+            transition: all 0.3s;
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
 
-.column-2 {
-  width: 48%; 
-}
-
-.text {
-  line-height: 2;
-  color: #333; /* 視認性を考慮した濃い文字色 */
-}
-
-.concept-img {
-  background-image: url('../src/assets/images/outdoor1.jpg');
-  background-position: center;
-  background-size: cover;
-  height: 340px;
-  border-radius: 10px;
-  position: relative;
-  z-index: 1; 
-}
-
-#concept-two .concept-img {
-  background-image: url('../src/assets/images/outdoor2.jpg');
-}
-
-#concept-three .concept-img {
-  background-image: url('../src/assets/images/outdoor1.jpg');
-}
-
-.heading {
-  font-family: 'Dancing Script', cursive; /* background transparent text */
-  font-size: 100px;
-  font-weight: 600;
-  color: #80BA4A;
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(-80%);
-  z-index: 0; 
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .flex {
-    flex-direction: column; 
-    align-items: stretch;  
-  }
-
-  .column-2 {
-    width: 100%; /* each column's width */
-    margin-bottom: 20px; /* space between each sections */
-  }
-
-  .concept-img {
-    height: 200px; 
-  }
-
-  .text {
-    text-align: center; 
-  }
-}
+        }
 
