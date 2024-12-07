@@ -14,9 +14,9 @@
 
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
 	<!-- Google Font -->
@@ -26,6 +26,8 @@
 
 	<!-- Google Icon -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
 	<!-- Link to navbar n footer stylesheet -->
 	<link rel="stylesheet" href="css/styles.css">
@@ -52,7 +54,7 @@
               <h4>Next Stop is Dublin.</h4>
               <span>The place where history meets modern vibrancy in every corner.</span>
               <div class="main-border-button">
-                <a href="#" id="redirectButton">Check Now!</a>
+                <a href="#" class="special-button">Check Now!</a>
               </div>
             </div>
             <img src="src/assets/images/irishpub.jpg" alt="irishpub" class="img-fluid h-100">
@@ -111,7 +113,7 @@
                     <h4>Bar &amp; Pubs</h4>
                     <p>Ready to raise a glass? Let’s make it a night to remember!</p>
                     <div class="main-border-button">
-                      <a href="#">Discover More</a>
+                      <a href="food_drinks.html#concept-four">Discover More</a>
                     </div>
                   </div>
                 </div>
@@ -130,7 +132,7 @@
                     <h4>Cafes</h4>
                     <p>Take a break, Relax and unwind in our cozy space.</p>
                     <div class="main-border-button">
-                      <a href="#">Discover More</a>
+                      <a href="food_drinks.html#cafe">Discover More</a>
                     </div>
                   </div>
                 </div>
@@ -142,9 +144,9 @@
       </div>
     </div>
   </div>
-    <!-- ***** Main Banner Area End ***** -->
+    <!-- ***** Main Banner Section End ***** -->
 
-    <!-- ***** Bar & Pubs part start ***** -->
+    <!-- ***** Bar & Pubs Section start ***** -->
   <section id="concept-four">
     <div class="container">
       <div class="flex">
@@ -157,7 +159,7 @@
               or the electrifying energy of modern nightclubs, Dublin's nightlife has something for everyone.
           </p>
           <div class="main-border-button">
-          <a href="#" id="redirectButton">Click Me!</a>
+          <a href="#" class="special-button">Click Me!</a>
           </div>
         </div>
       </div>
@@ -165,85 +167,81 @@
   </section>
     <!-- ***** Bar & Pubs part end ***** -->
 
-    <!-- Cafe Testimonial Start -->
-  <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="mytitle mb-5">Top Cafe Picks</h2>
-      </div>
-      <div class="carousel-indicators2">
-          <button type="button"></button>
-          <button type="button"></button>
-          <button type="button"></button>
-          <button type="button"></button>
-      </div>
-        <div class="owl-carousel testimonial-carousel">
-          <div class="testimonial-item bg-transparent border rounded p-4">
-            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>Your ultimate city coffee escape! Specialty brews, vibrant vibes, and the perfect spot to refuel. 🌟☕</p>
-              <div class="d-flex align-items-center">
-                <img class="img-fluid flex-shrink-0 rounded-circle" src="src/assets/images/customer1.jpg" style="width: 50px; height: 50px;">
-                <div class="ps-3">
-                  <h5 class="mb-1">Brew &amp; Bloom</h5>
-                  <small>Dublin 6</small>
+    <!-- ***** Cafe Testimonial Start ***** -->
+  <section id="cafe">
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mytitle mb-5">Top Cafe Picks</h2>
+        </div>
+          <div class="owl-dots">
+            <button type="button" class="owl-dot"></button>
+            <button type="button" class="owl-dot"></button>
+            <button type="button" class="owl-dot"></button>
+            <button type="button" class="owl-dot"></button>
+          </div>
+          <!-- Testimonial 1/4 -->
+          <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item bg-transparent border rounded p-4">
+              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+              <p>Your ultimate city coffee escape! Specialty brews, vibrant vibes, and the perfect spot to refuel. 🌟☕</p>
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid flex-shrink-0 rounded-circle" src="src/assets/images/customer1.jpg" style="width: 50px; height: 50px;">
+                  <div class="ps-3">
+                    <h5 class="mb-1">Brew &amp; Bloom</h5>
+                    <small>Dublin 6</small>
+                  </div>
                 </div>
+            </div>
+          <!-- Testimonial 2/4 -->
+          <div class="testimonial-item bg-transparent border rounded p-4">
+            <i class="fa fa-quote-left fa-2x mb-3"></i>
+            <p>Where artisanal coffee meets a cozy vibe! Perfect for your morning brew or an afternoon chill with friends. 🌿✨</p>
+            <div class="d-flex align-items-center">
+              <img class="img-fluid flex-shrink-0 rounded-circle" src="src/assets/images/customer2.jpg" style="width: 50px; height: 50px;">
+              <div class="ps-3">
+                <h5 class="mb-1">The little Bean</h5>
+                <small>Dublin 11</small>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3/4 -->
+          <div class="testimonial-item bg-transparent border rounded p-4">
+              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+              <p>Experience the heart of Cork with rich, locally roasted blends. A must-visit for true coffee lovers! ☕❤️</p>
+              <div class="d-flex align-items-center">
+                  <img class="img-fluid flex-shrink-0 rounded-circle" src="src/assets/images/customer3.jpg" style="width: 50px; height: 50px;">
+                  <div class="ps-3">
+                      <h5 class="mb-1">Café Drift</h5>
+                      <small>Dublin 2</small>
+                  </div>
               </div>
           </div>
-        
-        <div class="testimonial-item bg-transparent border rounded p-4">
-          <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-          <p>Where artisanal coffee meets a cozy vibe! Perfect for your morning brew or an afternoon chill with friends. 🌿✨</p>
-          <div class="d-flex align-items-center">
-            <img class="img-fluid flex-shrink-0 rounded-circle" src="src/assets/images/customer2.jpg" style="width: 50px; height: 50px;">
-            <div class="ps-3">
-              <h5 class="mb-1">The little Bean</h5>
-              <small>Dublin 11</small>
-            </div>
+          <!-- Testimonial 4/4 -->
+          <div class="testimonial-item bg-transparent border rounded p-4">
+              <i class="fa fa-quote-left fa-2x mb-3"></i>
+              <p>Bold flavors, seaside views, and a passion for perfection. Your coffee journey starts here! 🌊☀️</p>
+              <div class="d-flex align-items-center">
+                  <img class="img-fluid flex-shrink-0 rounded-circle" src="src/assets/images/customer4.jpg" style="width: 50px; height: 50px;">
+                  <div class="ps-3">
+                      <h5 class="mb-1">The Grind &amp; Grind</h5>
+                      <small>Dublin 1</small>
+                  </div>
+              </div>
           </div>
         </div>
-        <div class="testimonial-item bg-transparent border rounded p-4">
-            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>Experience the heart of Cork with rich, locally roasted blends. A must-visit for true coffee lovers! ☕❤️</p>
-            <div class="d-flex align-items-center">
-                <img class="img-fluid flex-shrink-0 rounded-circle" src="src/assets/images/customer3.jpg" style="width: 50px; height: 50px;">
-                <div class="ps-3">
-                    <h5 class="mb-1">Café Drift</h5>
-                    <small>Dublin 2</small>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-item bg-transparent border rounded p-4">
-            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>Bold flavors, seaside views, and a passion for perfection. Your coffee journey starts here! 🌊☀️</p>
-            <div class="d-flex align-items-center">
-                <img class="img-fluid flex-shrink-0 rounded-circle" src="src/assets/images/customer4.jpg" style="width: 50px; height: 50px;">
-                <div class="ps-3">
-                    <h5 class="mb-1">The Grind &amp; Grind</h5>
-                    <small>Dublin 1</small>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="owl-nav">
-        <button type="button" role="presentation" class="owl-prev">
-          <i class="fa fa-angle-left" aria-hidden="true"></i>
-        </button>
-        <button type="button" role="presentation" class="owl-next">
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </button>
       </div>
     </div>
-  </div>
-        <!-- Testimonial End -->
-        <!-- Testimonial End -->
+  </section>
+    <!-- Testimonial End -->
 
+    <!-- Back to Top Button -->
+  <a href="#top" class="btn btn-lg btn-primary back-to-top" aria-label="Back to top" role="button">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 
-
-
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+  	<!-- Footer Section -->
+	<div id="footer-placeholder"></div>
 
 
 

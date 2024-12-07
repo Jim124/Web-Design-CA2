@@ -7,7 +7,7 @@ body {
 
 h1 {
 	font-size: 5rem;
-    text-align: center;
+  text-align: center;
 	color: #FEF9F2;
 }	
 
@@ -20,12 +20,12 @@ h5 {
 	font-weight: bold;
 	color: #000;
 }
+
 /* 
 ---------------------------------------------
 Outdoor Page start --- Carousel
 --------------------------------------------- 
 */
-
 .carousel {
   margin-bottom: 4rem;
 }
@@ -39,7 +39,6 @@ Outdoor Page start --- Carousel
 .carousel-item {
   height: 50vh;
   position: relative;
-
 }
 
 .carousel-item img {
@@ -58,30 +57,41 @@ Outdoor Page start --- Carousel
 }
 /*
 ---------------------------------------------
-Outdoor start -- consept
+Outdoor -- Consept Section 
 ---------------------------------------------
 */
 
 /*concept-2 with background colour*/
 #concept-two {
-  background-color: #D5ED9F; /* 背景色を追加 */
-  padding: 5rem 0; /* 上下の余白 */
+  background-color: #D5ED9F; 
+  padding: 5rem 0; 
 }
 
 #concept-two .text {
-  color: #333; /* 背景に合わせた文字色 */
+  color: #333; 
 }
 
 #concept-two .heading {
-  color: #00712D; /* タイトルの透明文字の色を目立たせる */
+  color: #00712D; 
 }
 
 #concept, #concept-two, #concept-three {
   margin-bottom: 120px;
   margin-top: 100px;
 }
+/* section1-animation JS */
+#concept-two {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
 
-/* section1-animation */
+#concept-two.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* section1-animation JS */
 #concept {
   opacity: 0;
   transform: translateY(50px);
@@ -92,7 +102,6 @@ Outdoor start -- consept
   opacity: 1;
   transform: translateY(0);
 }
-
 
 /* section3-animation */
 #concept-three .text,
@@ -115,7 +124,6 @@ Outdoor start -- consept
   opacity: 1;
   transform: translateX(0); 
 }
-
 
 .title {
   font-size: 20px;
@@ -172,14 +180,14 @@ Outdoor start -- consept
   background-image: url('../src/assets/images/outdoor1.jpg');
 }
 
-
+/* tranparent letters */
 .heading {
   font-family: 'Dancing Script', cursive; /* background transparent text */
   font-size: 80px;
   font-weight: 600;
   color: #80BA4A;
   opacity: 0.1;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   transform: translateY(-80%);
@@ -215,48 +223,7 @@ Outdoor start -- consept
 
 /* 
 ---------------------------------------------
-food_and_drinks / Bar&Pubs
---------------------------------------------- 
-*/
-#concept-four {
-  background-color: #D5ED9F; /* 背景色を追加 */
-  padding: 5rem 0; /* 上下の余白 */
-}
-
-#concept-four .text {
-  color: #333; /* 背景に合わせた文字色 */
-}
-
-#concept-four .concept-img {
-  background-image: url('../src/assets/images/pub1.jpg');
-}
-
-.concept-pubs {
-  background-color:#D5ED9F;
-	width: 100%;
-	margin: 0;
-	padding-bottom: 3rem 0;
-}
-
-.concept-pubs .title-pubs {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff; /* タイトルを目立たせる白色 */
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.pub-img {
-  width: 100%; /* 親要素に合わせて画像を拡大縮小 */
-  height: auto; /* アスペクト比を保つ */
-  border-radius: 10px; /* 角を丸くする */
-}
-
-
-
-/* 
----------------------------------------------
-food_and_drinks / banner
+food_and_drinks -- Section-- Banner
 --------------------------------------------- 
 */
 
@@ -266,14 +233,14 @@ food_and_drinks / banner
   padding-bottom: 30px;
 }
 
+.main-banner .left-content {
+  height: 100%; 
+}
+
 .main-banner .thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.main-banner .left-content {
-  height: 100%; 
 }
 
 .main-banner .right-content .thumb img {
@@ -329,7 +296,7 @@ food_and_drinks / banner
 
 .right-content .thumb .inner-content span {
   font-size: 16px;
-  color: #fff
+  color: #fff;
   font-style: italic;
 }
 
@@ -382,6 +349,46 @@ food_and_drinks / banner
   color: #fff;
   padding: 0 20px;
   margin-bottom: 20px;
+}
+
+/* 
+---------------------------------------------
+food_and_drinks -- Section-- Bar&Pubs
+--------------------------------------------- 
+*/
+#concept-four {
+  background-color: #D5ED9F;
+  border-bottom: 3px dotted #eee; 
+  padding: 5rem 0; 
+}
+
+#concept-four .text {
+  color: #333; 
+}
+
+#concept-four .concept-img {
+  background-image: url('../src/assets/images/pub1.jpg');
+}
+
+.concept-pubs {
+  background-color:#D5ED9F;
+	width: 100%;
+	margin: 0;
+	padding-bottom: 3rem 0;
+}
+
+.concept-pubs .title-pubs {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff; 
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pub-img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
 }
 
 
@@ -453,6 +460,10 @@ Testimonial-cafe
     border-radius: 50%; 
 }
 
+.testimonial-item .fa-quote-left {
+  color: #ff6347; /* アイコンの色を変更 (例: トマト色) */
+}
+
 .mytitle {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -467,71 +478,70 @@ Testimonial-cafe
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); 
 }
 
-.carousel-indicators2 {
-  display: flex;
-  justify-content: center;
+
+/* owl-dot */
+.owl-dots {
+  text-align: center; 
+  margin-bottom: 50px;  
+}
+
+.owl-dot {
+  background-color: #ff7f00; 
+  border-radius: 50%; 
+  display: inline-block; 
+  border: none;   
+  width: 20px;             
+  height: 20px;             
+  margin: 0 5px;    
+  transition: background-color 0.3s ease;
+  cursor: pointer;        
+}
+
+.owl-dot.active {
+  background-color: #FF4500;
+}
+
+.owl-dot:hover {
+  background-color: #ff634782;
+}
+
+.owl-dot:focus {
+  outline: none; 
+}
+
+/* Back to Top button */
+.back-to-top {
+  position: fixed;         
+  bottom: 20px;             
+  right: 20px;              
+  background-color: #007bff; 
+  color: white; /* icon color */
+  border-radius: 50%;       
+  width: 50px;         
+  height: 50px;       
+  display: flex; 
+  justify-content: center;  /* icon center */
   align-items: center; 
-  position: absolute;
-  width: 100%; 
-  top: 60px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 24px; 
+  z-index: 1000; 
+  transition: transform 0.3s ease-in-out;
 }
 
-.carousel-indicators2 button {
-  width: 20px;
-  height: 20px;
-  left: 50%;
-  background-color: #ff7f00;
-  border-radius: 50%;
-  border: none;
-  opacity: 0.7;
-  transition: all 0.3s;
+.back-to-top i {
+  color: white;
+  font-size: 20px;
 }
 
-/* owl-nav コンテナ */
-.owl-nav {
-  display: flex; /* 横並びに配置 */
-  justify-content: space-between; /* 左右にボタンを配置 */
-  align-items: center; /* 垂直方向に中央揃え */
-  padding: 10px; /* ボタン周りに余白 */
-  background-color: rgba(0, 0, 0, 0.5); /* 背景色を半透明に */
-  border-radius: 50px; /* 丸みを帯びた角 */
-  position: absolute; /* 固定位置に配置 */
-  top: 50%; /* 垂直中央 */
-  width: 100%; /* 横幅いっぱい */
-  transform: translateY(-50%); /* 真ん中に配置 */
-  z-index: 10; /* 最前面に表示 */
+.back-to-top:hover {
+  background-color: #0056b3; 
+  transform: scale(1.1);
 }
 
-/* ボタンのスタイル */
-.owl-nav button {
-  background-color: rgba(255, 255, 255, 0.5); /* 半透明の白背景 */
-  border: none; /* 枠線なし */
-  padding: 10px; /* ボタンの内側に余白 */
-  border-radius: 50%; /* 丸いボタン */
-  cursor: pointer; /* ポインターが手に変わる */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* ホバー時のアニメーション */
+/* JS */
+.back-to-top.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(100px);
 }
 
-/* ボタンホバー時のエフェクト */
-.owl-nav button:hover {
-  background-color: rgba(255, 255, 255, 0.8); /* ホバー時に背景色が少し濃くなる */
-  transform: scale(1.1); /* ボタンを少し大きくする */
-}
-
-/* アイコンのスタイル */
-.owl-nav button i {
-  font-size: 20px; /* アイコンサイズ */
-  color: white; /* アイコンの色 */
-  display: block; /* アイコンをブロック要素にして中央に配置 */
-  text-align: center; /* 中央揃え */
-}
-
-/* 左矢印ボタンの位置 */
-.owl-prev {
-  margin-right: auto; /* 左に寄せる */
-}
-
-/* 右矢印ボタンの位置 */
-.owl-next {
-  margin-left: auto; /* 右に寄せる */
-}

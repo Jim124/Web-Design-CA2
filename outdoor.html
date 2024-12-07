@@ -14,9 +14,9 @@
 
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
 	<!-- Google Font -->
@@ -26,137 +26,140 @@
 
 	<!-- Google Icon -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
 	<!-- Link to navbar n footer stylesheet -->
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/css_mahiro.css">
 
-   <!-- javascript -->
-   <script src="js/main.js"></script>
-   <script src="js/script_mahiro.js"></script>
+  <!-- javascript -->
+  <script src="js/main.js"></script>
+  <script src="js/script_mahiro.js"></script>
 </head>
 
 <body>
-<!-- navbar part -->
-<div id="navbar-placeholder"></div>
+  <!-- navbar part -->
+  <div id="navbar-placeholder"></div>
 
 
-<!-- carousel part -->
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="src/assets/images/headpic1.jpg" class="background-image d-block w-100" alt="Slide 1">
-        <div class="container py-2">
-          <div class="carousel-caption">
-            <h1>Discover Ireland</h1>
-			      <p>Uncover hidden gems and breathtaking landscapes.</p>
+  <!-- carousel part -->
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="src/assets/images/headpic1.jpg" class="background-image d-block w-100" alt="Slide 1">
+          <div class="container py-2">
+            <div class="carousel-caption text-center">
+              <h1 class="display-4">Discover Ireland</h1>
+              <p class="lead">Uncover hidden gems and breathtaking landscapes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="src/assets/images/headpic2.jpg" class="d-block w-100" alt="Slide 2">
+          <div class="container py-2">
+            <div class="carousel-caption">
+              <h1 class="display-4">Unleash the Outdoors</h1>
+              <p class="lead">Get ready to explore the unknown and embrace the thrill.</p> 
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="src/assets/images/headpic3.jpg" class="d-block w-100" alt="Slide 3">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="display-4">Adventure Awaits</h1>
+              <p class="lead">Find your freedom in nature’s playground.</p>        
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="src/assets/images/headpic2.jpg" class="d-block w-100" alt="Slide 2">
-        <div class="container py-2">
-          <div class="carousel-caption">
-            <h1>Unleash the Outdoors</h1>
-            <p>Get ready to explore the unknown and embrace the thrill.</p> 
-          </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  <!-- section1 * picture: right, text: left -->
+  <section id="concept">
+    <div class="container">
+      <div class="flex">
+        <div class="column-2 text">
+      <h2>Glendalough, Wicklow Mountains</h2>
+          <p>Located in County Wicklow, Glendalough is a picturesque valley nestled in the heart of the Wicklow Mountains National Park.
+        The area is renowned for its stunning natural beauty, rich history, and diverse outdoor activities. 
+        Glendalough, meaning "valley of two lakes," is home to two serene lakes,
+        a monastic site dating back to the 6th century, and a network of hiking trails suitable for all levels.
+      </p>
+      <div class="main-border-button">
+      <a href="#" class="special-button">Click Me!</a>
+      </div>      </div>
+        <div class="column-2 concept-img">
+          <div class="heading">Ireland</div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="src/assets/images/headpic3.jpg" class="d-block w-100" alt="Slide 3">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Adventure Awaits</h1>
-            <p>Find your freedom in nature’s playground.</p>        
-          </div>
+    </div>
+  </section>
+
+  <!-- section2 * picture: left, text: right -->
+  <section id="concept-two">
+    <div class="container">
+      <div class="flex">
+        <div class="column-2 concept-img">
+          <div class="heading">Outdoor</div>
+        </div>
+        <div class="column-2 text">
+          <h2>Lough Derg</h2>
+          <p>A popular spot for kayaking, Lough Derg is a large lake surrounded by scenic landscapes,
+        offering tranquil waters perfect for water sports. You can also explore nearby
+        forests and enjoy walking trails along the shores.
+      </p>
+      <div class="main-border-button">
+      <a href="#" class="special-button">Click Me!</a>
+      </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
 
-<!-- section1 * picture: right, text: left -->
-<section id="concept">
-  <div class="container">
-    <div class="flex">
-      <div class="column-2 text">
-		<h2>Glendalough, Wicklow Mountains</h2>
-        <p>Located in County Wicklow, Glendalough is a picturesque valley nestled in the heart of the Wicklow Mountains National Park.
-			The area is renowned for its stunning natural beauty, rich history, and diverse outdoor activities. 
-			Glendalough, meaning "valley of two lakes," is home to two serene lakes,
-			a monastic site dating back to the 6th century, and a network of hiking trails suitable for all levels.
-		</p>
-		<div class="main-border-button">
-		<a id="signup-button" href="#">Click Me!</a>
-		</div>      </div>
-      <div class="column-2 concept-img">
-        <div class="heading">Ireland</div>
+  <!-- section3 * picture: left, text: right -->
+  <section id="concept-three">
+    <div class="container">
+      <div class="flex">
+        <div class="column-2 text">
+          <h2>Djouce Forest</h2>
+          <p>This forest in the Wicklow Mountains provides a perfect mix of hiking and outdoor adventure.
+        While it's not typically known for kayaking, nearby lakes and rivers in the Wicklow
+        area offer excellent opportunities for water-based activities.
+        Djouce Forest itself is ideal for mountain biking, hiking, and enjoying the natural beauty of the area.
+      </p>
+      <div class="main-border-button">
+      <a href="#" class="special-button">Click Me!</a>
+      </div>      
+    </div>
+        <div class="column-2 concept-img">
+          <div class="heading">Adventure</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- section2 * picture: left, text: right -->
-<section id="concept-two">
-  <div class="container">
-    <div class="flex">
-      <div class="column-2 concept-img">
-        <div class="heading">Outdoor</div>
-      </div>
-      <div class="column-2 text">
-        <h2>Lough Derg</h2>
-        <p>A popular spot for kayaking, Lough Derg is a large lake surrounded by scenic landscapes,
-			offering tranquil waters perfect for water sports. You can also explore nearby
-			forests and enjoy walking trails along the shores.
-		</p>
-		<div class="main-border-button">
-		<a id="signup-button" href="#">Click Me!</a>
-		</div>
-      </div>
-    </div>
-  </div>
-</section>
+   <!-- Back to Top Button -->
+  <a href="#top" class="btn btn-lg btn-primary back-to-top" aria-label="Back to top" role="button">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 
-<!-- section3 * picture: left, text: right -->
-<section id="concept-three">
-  <div class="container">
-    <div class="flex">
-      <div class="column-2 text">
-        <h2>Djouce Forest</h2>
-        <p>This forest in the Wicklow Mountains provides a perfect mix of hiking and outdoor adventure.
-			While it's not typically known for kayaking, nearby lakes and rivers in the Wicklow
-			area offer excellent opportunities for water-based activities.
-			Djouce Forest itself is ideal for mountain biking, hiking, and enjoying the natural beauty of the area.
-		</p>
-		<div class="main-border-button">
-		<a id="signup-button" href="#">Click Me!</a>
-		</div>      </div>
-      <div class="column-2 concept-img">
-        <div class="heading">Adventure</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Back to Top -->
-<div class="navigation">
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-</div>
-
-</body>
-</html>
+  	<!-- Footer Section -->
+	<div id="footer-placeholder"></div>
 
 </body>
 </html>
