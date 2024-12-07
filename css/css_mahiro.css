@@ -427,8 +427,6 @@ Button CSS
 }
 
 
-
-
 /*
 ---------------------------------------------
 Testimonial-cafe
@@ -489,3 +487,51 @@ Testimonial-cafe
   transition: all 0.3s;
 }
 
+/* owl-nav コンテナ */
+.owl-nav {
+  display: flex; /* 横並びに配置 */
+  justify-content: space-between; /* 左右にボタンを配置 */
+  align-items: center; /* 垂直方向に中央揃え */
+  padding: 10px; /* ボタン周りに余白 */
+  background-color: rgba(0, 0, 0, 0.5); /* 背景色を半透明に */
+  border-radius: 50px; /* 丸みを帯びた角 */
+  position: absolute; /* 固定位置に配置 */
+  top: 50%; /* 垂直中央 */
+  width: 100%; /* 横幅いっぱい */
+  transform: translateY(-50%); /* 真ん中に配置 */
+  z-index: 10; /* 最前面に表示 */
+}
+
+/* ボタンのスタイル */
+.owl-nav button {
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明の白背景 */
+  border: none; /* 枠線なし */
+  padding: 10px; /* ボタンの内側に余白 */
+  border-radius: 50%; /* 丸いボタン */
+  cursor: pointer; /* ポインターが手に変わる */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* ホバー時のアニメーション */
+}
+
+/* ボタンホバー時のエフェクト */
+.owl-nav button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* ホバー時に背景色が少し濃くなる */
+  transform: scale(1.1); /* ボタンを少し大きくする */
+}
+
+/* アイコンのスタイル */
+.owl-nav button i {
+  font-size: 20px; /* アイコンサイズ */
+  color: white; /* アイコンの色 */
+  display: block; /* アイコンをブロック要素にして中央に配置 */
+  text-align: center; /* 中央揃え */
+}
+
+/* 左矢印ボタンの位置 */
+.owl-prev {
+  margin-right: auto; /* 左に寄せる */
+}
+
+/* 右矢印ボタンの位置 */
+.owl-next {
+  margin-left: auto; /* 右に寄せる */
+}
