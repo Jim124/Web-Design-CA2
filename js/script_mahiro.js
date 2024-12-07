@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // alart
   document.addEventListener("DOMContentLoaded", () => {
-      const button = document.querySelector(".main-border-button a");
+      const button = document.querySelector(".button-page1");
   
       button.addEventListener("click", (event) => {
           event.preventDefault(); 
@@ -62,26 +62,3 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  const slides = document.querySelectorAll('.thumb');
-let currentIndex = 0;
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.style.display = i === index ? 'block' : 'none'; // 現在のスライドだけ表示
-    slide.classList.remove('slide-active');
-    if (i === index) {
-      slide.classList.add('slide-active');
-    }
-  });
-}
-
-function startSlideShow() {
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length; // 次のスライドへ
-    showSlide(currentIndex);
-  }, 3000); // 3秒ごとに切り替え
-}
-
-// 初期化
-showSlide(currentIndex);
-startSlideShow();
