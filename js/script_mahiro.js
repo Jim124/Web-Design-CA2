@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // alart
   document.addEventListener("DOMContentLoaded", () => {
-      const button = document.querySelector(".button-page1");
+      const button = document.querySelector(".main-border-button a");
   
       button.addEventListener("click", (event) => {
           event.preventDefault(); 
-          alert("Enjoy your night out in Dublin!");
+          alert("Enjoy descovoring Dublin!");
       });
   });
 
