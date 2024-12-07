@@ -370,26 +370,7 @@ food_and_drinks -- Section-- Bar&Pubs
   background-image: url('../src/assets/images/pub1.jpg');
 }
 
-.concept-pubs {
-  background-color:#D5ED9F;
-	width: 100%;
-	margin: 0;
-	padding-bottom: 3rem 0;
-}
 
-.concept-pubs .title-pubs {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff; 
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.pub-img {
-  width: 100%; 
-  height: auto; 
-  border-radius: 10px; 
-}
 
 
 

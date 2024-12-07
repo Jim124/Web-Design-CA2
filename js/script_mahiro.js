@@ -74,10 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("DOMContentLoaded", () => {
-    // 特定のボタン（.special-button）を選択
     const button = document.querySelector(".special-button");
   
-    // イベントリスナーを追加
     if (button) {
       button.addEventListener("click", (event) => {
         event.preventDefault();
