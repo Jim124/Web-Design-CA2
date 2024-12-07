@@ -256,8 +256,10 @@ food_and_drinks -- Section-- Banner
 
 .left-content .inner-content {
   position: absolute;
-  left: 100px;
+  left: 50px;
+  right: 50px;
   top: 50%;
+  text-align: center;
   transform: translateY(-50%);
 }
 
@@ -268,7 +270,7 @@ food_and_drinks -- Section-- Banner
   margin-bottom: 20px;
 }
 
-.right-content .thumb .left-content .inner-content span {
+.left-content .inner-content span {
   font-size: 18px;
   color: #fff;
   font-weight: 400;
@@ -277,13 +279,27 @@ food_and_drinks -- Section-- Banner
   margin-bottom: 30px;
 }
 
+@media (max-width: 576px) {
+  .left-content .inner-content h4 {
+    font-size: 24px; /* Further reduce heading size on very small screens */
+  }
+
+  .left-content .inner-content p {
+    font-size: 14px; /* Further adjust paragraph font size */
+  }
+}
+
 /* Rright 4 pictures */
+.inner-content p {
+  color: #fff;
+}
+
 .right-content .inner-content {
   position: absolute;
   left: 50px;
   right: 50px;
   top: 50%;
- text-align: center;
+  text-align: center;
   transform: translateY(-50%);
 }
 
@@ -298,10 +314,6 @@ food_and_drinks -- Section-- Banner
   font-size: 16px;
   color: #fff;
   font-style: italic;
-}
-
-.inner-content p {
-  color: #fff;
 }
 
 .right-content .thumb {
@@ -442,8 +454,7 @@ Testimonial-cafe
 }
 
 .mytitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-weight: bold;
     color: #00712D; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
     transition: all 0.3s ease; 
