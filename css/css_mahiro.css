@@ -329,8 +329,12 @@ food_and_drinks / banner
 
 .right-content .thumb .inner-content span {
   font-size: 16px;
-  color: #fff;
+  color: #fff
   font-style: italic;
+}
+
+.inner-content span {
+  color: #fff;
 }
 
 .right-content .thumb {
@@ -453,14 +457,14 @@ Testimonial-cafe
 .mytitle {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #FF9100; 
+    color: #00712D; 
     letter-spacing: 2px; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
     transition: all 0.3s ease; 
 }
 
 .mytitle:hover {
-    color: #00712D; 
+    color: #FF9100; 
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); 
 }
 
