@@ -279,7 +279,7 @@ food_and_drinks -- Section-- Banner
   margin-bottom: 30px;
 }
 
-/* 576px以下 */
+/* less than 576px*/
 @media (max-width: 576px) {
   .left-content .inner-content h4 {
     font-size: 24px;
@@ -386,6 +386,16 @@ food_and_drinks -- Section-- Bar&Pubs
 
 #concept-four .concept-img {
   background-image: url('../src/assets/images/pub1.jpg');
+}
+
+#concept-four .concept-img {
+  opacity: 0;
+  transform: translateX(-50px); 
+  transition: all 0.5s ease-out;
+}
+
+#concept-four .concept-img {
+  transform: translateX(50px); 
 }
 
 /* 

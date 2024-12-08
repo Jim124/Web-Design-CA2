@@ -94,3 +94,26 @@ window.addEventListener('scroll', function() {
     backToTopButton.classList.add('hidden'); 
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const conceptSection = document.querySelector('#concept-four');
+  const conceptText = conceptSection.querySelector('.text');
+  const conceptImage = conceptSection.querySelector('.concept-img');
+
+  // fade in
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          conceptText.style.opacity = '1';
+          conceptText.style.transform = 'translateX(0)';
+          conceptImage.style.opacity = '1';
+          conceptImage.style.transform = 'translateX(0)';
+        }
+      });
+    },
+    { threshold: 0.2 } 
+  );
+
+  observer.observe(conceptSection);
+})
