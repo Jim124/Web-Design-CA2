@@ -1,9 +1,9 @@
 $(document).ready(function () {
   const slides = [
-    { alt: "slide1", src: "src/lu-pic/slide1.jpg" },
-    { alt: "slide2", src: "src/lu-pic/slide2.jpg" },
-    { alt: "slide3", src: "src/lu-pic/slide3.jpg" },
-    { alt: "slide4", src: "src/lu-pic/slide4.jpg" },
+    { alt: "slide1", src: "src/lu-pic/slide1.avif" },
+    { alt: "slide2", src: "src/lu-pic/slide2.avif" },
+    { alt: "slide3", src: "src/lu-pic/slide3.avif" },
+    { alt: "slide4", src: "src/lu-pic/slide4.avif" },
   ];
   // Dynamically generate silde pic
   $.each(slides, function (index, item) {
@@ -19,28 +19,28 @@ $(document).ready(function () {
   // Dynamically generate first row - where to stay
   const stayPlaces = [
     {
-      src: "src/images/tent-2.jpg",
+      src: "src/images/tent-2.avif",
       alt: "tent",
       title: "Experience the Charm of Winter Camping",
       text: "where to stay",
       category: "tent",
     },
     {
-      src: "src/images/hotel.jpg",
+      src: "src/images/hotel.avif",
       alt: "hotel",
       title: "Luxury Awaits: Your Winter Getaway in Dublin",
       text: "where to stay",
       category: "hotel",
     },
     {
-      src: "src/images/cabin-1.jpg",
+      src: "src/images/cabin-1.avif",
       alt: "cabin",
       title: "Cozy Cabins: A Magical Winter Retreat in Dublin",
       text: "where to stay",
       category: "cabin",
     },
     {
-      src: "src/images/caravan-2.jpg",
+      src: "src/images/caravan-2.avif",
       alt: "caravan",
       title: "Adventurous Winter Break: Discover Dublin in a Caravan",
       text: "where to stay",
@@ -63,28 +63,28 @@ $(document).ready(function () {
   // Dynamically generate second row - food n drinks
   const indoorPlaces = [
     {
-      src: "src/lu-pic/indoor-1.jpg",
+      src: "src/lu-pic/indoor-1.avif",
       alt: "indoor",
       title: "Ryleigh's",
       text: "grill",
       category: "food",
     },
     {
-      src: "src/lu-pic/indoor-2.jpg",
+      src: "src/lu-pic/indoor-2.avif",
       alt: "indoor",
       title: "WILDE Restaurant",
       text: "fusion",
       category: "food",
     },
     {
-      src: "src/lu-pic/indoor-3.jpg",
+      src: "src/lu-pic/indoor-3.avif",
       alt: "indoor",
       title: "FIRE Steakhouse and Bar",
       text: "steak",
       category: "food",
     },
     {
-      src: "src/lu-pic/indoor-4.jpg",
+      src: "src/lu-pic/indoor-4.avif",
       alt: "indoor",
       title: "The Church",
       text: "international",
@@ -110,28 +110,28 @@ $(document).ready(function () {
   // Dynamically generate third row - outdoor
   const outdoorPlaces = [
     {
-      src: "src/lu-pic/outdoor-coastal.jpg",
+      src: "src/lu-pic/outdoor-coastal.avif",
       alt: "coastal",
       title: "Dublin Coastal Hike, Pints & Puppies",
       text: "outdoor",
       category: "hiking",
     },
     {
-      src: "src/lu-pic/outdoor-boat.jpg",
+      src: "src/lu-pic/outdoor-boat.avif",
       alt: "Boat",
       title: "1 Hour Boat Trip from Howth to Dun Laoghaire",
       text: "outdoor",
       category: "boat trip",
     },
     {
-      src: "src/lu-pic/outdoor-cliff.jpg",
+      src: "src/lu-pic/outdoor-cliff.avif",
       alt: "cliff",
       title: "Cliffs of Moher Tour",
       text: "outdoor",
       category: "hiking",
     },
     {
-      src: "src/lu-pic/outdoor-howth.jpg",
+      src: "src/lu-pic/outdoor-howth.avif",
       alt: "howth",
       title: "Howth Coastal Half-Day Bus Tour",
       text: "outdoor",
@@ -171,16 +171,16 @@ $(document).ready(function () {
 
   const festivalNEvents = [
     {
-      src: "src/images/christmas-spinner.jpg",
+      src: "src/images/christmas-spinner.avif",
       alt: "spinner",
       title: "Magical Winter Break in Dublin",
-      text: "where to stay",
+      text: "events",
       category: "festival",
       date: "2024-12-30",
       diff: calDateDiff("2024-12-30"),
     },
     {
-      src: "src/images/comedy-3.jpg",
+      src: "src/images/comedy-3.avif",
       alt: "comedy",
       title: "Comedy Show in January",
       text: "events",
@@ -189,7 +189,7 @@ $(document).ready(function () {
       diff: calDateDiff("2025-01-30"),
     },
     {
-      src: "src/images/music-3.jpg",
+      src: "src/images/music-3.avif",
       alt: "music",
       title: "Music event in December",
       text: "events",
@@ -198,7 +198,7 @@ $(document).ready(function () {
       diff: calDateDiff("2024-12-01"),
     },
     {
-      src: "src/images/theater-1.jpg",
+      src: "src/images/theater-1.avif",
       alt: "theater",
       title: "Theater Show on New Year's Eve",
       text: "events",

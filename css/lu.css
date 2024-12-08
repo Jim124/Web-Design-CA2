@@ -152,7 +152,7 @@ button {
 }
 
 .outdoor-bg {
-    background-image: url('../src/lu-pic/outdoor1.jpg');
+    background-image: url('../src/lu-pic/outdoor1.avif');
     background-size: cover;
     background-position: center;
     min-height: 500px;
