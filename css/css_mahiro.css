@@ -388,6 +388,8 @@ food_and_drinks -- Section-- Bar&Pubs
   background-image: url('../src/assets/images/pub1.jpg');
 }
 
+/* JS */
+#concept-four .text,
 #concept-four .concept-img {
   opacity: 0;
   transform: translateX(-50px); 
