@@ -2,6 +2,7 @@ $(document).ready(function () {
   const slides = [
     { alt: "slide1", src: "src/lu-pic/slide1.avif" },
     { alt: "slide2", src: "src/lu-pic/slide2.avif" },
+    { alt: "slide3", src: "src/lu-pic/slide3.avif" },
     { alt: "slide4", src: "src/lu-pic/slide4.avif" },
   ];
   // Dynamically generate silde pic
@@ -10,7 +11,7 @@ $(document).ready(function () {
      <div class="carousel-item ${index === 0 ? "active" : ""}">
      <img src="${
        item.src
-     }" class="d-block w-100 h-100 object-fit-cover" alt="${item.alt}" loading="lazy">
+     }" class="d-block w-100 h-100 object-fit-cover" alt="${item.alt}">
      </div>
     `);
   });
