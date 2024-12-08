@@ -197,10 +197,10 @@ label {
 
 .gif-container {
     position: relative;
-    width: 100%;
+    width: 1100px;
     height: 200px;
     clip-path: inset(0 0 0 0);
-    background-image: url('../src/lu-pic/background.jpg');
+    background-image: url('../src/lu-pic/background.avif');
     background-size: cover;
     background-position: center;
     min-height: 400px;
